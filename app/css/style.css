@@ -1001,6 +1001,11 @@ video {
   background-color: hsl(255 11% 22% / var(--tw-bg-opacity));
 }
 
+.bg-darkBlue{
+  --tw-bg-opacity: 1;
+  background-color: hsl(217 28% 15% / var(--tw-bg-opacity));
+}
+
 .bg-gray-100{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
