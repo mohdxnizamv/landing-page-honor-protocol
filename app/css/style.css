@@ -560,13 +560,34 @@ video {
   padding-top: 1rem;
   padding-bottom: 1rem;
   font-weight: 600;
-  text-transform: uppercase;
+  text-transform: capitalize;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .btn4:hover{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+@media (min-width: 360px){
+  .btn4{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 760px){
+  .btn4{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+}
+
+@media (min-width: 1440px){
+  .btn4{
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 .btn5{
@@ -660,10 +681,6 @@ video {
 
 .-mt-16{
   margin-top: -4rem;
-}
-
-.mt-7{
-  margin-top: 1.75rem;
 }
 
 .mt-2{
@@ -783,16 +800,20 @@ video {
   max-width: 32rem;
 }
 
-.max-w-xl{
-  max-width: 36rem;
-}
-
 .max-w-7xl{
   max-width: 80rem;
 }
 
+.max-w-xl{
+  max-width: 36rem;
+}
+
 .max-w-4xl{
   max-width: 56rem;
+}
+
+.flex-grow{
+  flex-grow: 1;
 }
 
 .rotate-45{
@@ -1130,10 +1151,6 @@ video {
   text-align: right;
 }
 
-.text-start{
-  text-align: start;
-}
-
 .font-Josefin{
   font-family: Josefin Sans, sans-serif;
 }
@@ -1192,6 +1209,10 @@ video {
   font-weight: 700;
 }
 
+.uppercase{
+  text-transform: uppercase;
+}
+
 .capitalize{
   text-transform: capitalize;
 }
@@ -1213,6 +1234,11 @@ video {
 .text-blue-600{
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.text-cyan{
+  --tw-text-opacity: 1;
+  color: hsl(180 66% 49% / var(--tw-text-opacity));
 }
 
 .text-limegreen{
