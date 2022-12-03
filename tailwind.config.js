@@ -15,7 +15,7 @@ module.exports = {
         Josefin: ['Josefin Sans', 'sans-serif'],
       },
       colors: {
-        // white : '#ffffff',
+        limegreen: '#32CD32',
         cyan: 'hsl(180, 66%, 49%)',
         cyanLight: 'hsl(180, 66%, 69%)',
         darkViolet: 'hsl(257, 27%, 26%)',

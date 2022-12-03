@@ -20,12 +20,10 @@
     @apply relative rounded-md border-2 border-black bg-transparent py-2 px-3.5 font-bold uppercase text-black transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-black before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100;
   }
   .btn4 {
-    @apply relative rounded-3xl bg-gradient-to-r from-purple-700  px-7 py-4 font-semibold uppercase text-white hover:bg-blue-700
-    hover:text-black;
+    @apply relative rounded-3xl bg-gradient-to-l from-purple-700 to-blue-700 px-7 py-4 font-semibold uppercase text-white hover:bg-gradient-to-r;
   }
   .btn5 {
-    @apply relative rounded-full bg-gradient-to-r from-purple-700  px-3 py-2 font-semibold uppercase text-white hover:bg-blue-700
-    hover:text-black;
+    @apply relative rounded-xl bg-gradient-to-r from-purple-700  px-3 py-2 font-semibold uppercase text-white hover:text-black;
   }
 }
 

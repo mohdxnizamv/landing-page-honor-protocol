@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "watch": "npx tailwindcss -i ./app/css/input.css -o ./app/css/style.css --watch",
-    "build": "npx tailwindcss -i ./app/css/input.css -o ./app/css/style.css"
+    "build": "npx tailwindcss -i ./app/css/input.css -o ./app/css/style.css",
+    "write": "npx prettier --write index.html"
   },
   "keywords": [],
   "author": "",

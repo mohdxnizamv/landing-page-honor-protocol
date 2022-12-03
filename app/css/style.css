@@ -547,60 +547,14 @@ video {
   }
 }
 
-.btn2{
-  position: relative;
-  top: -0.25rem;
-  left: -0.25rem;
-  --tw-bg-opacity: 1;
-  background-color: rgb(31 41 55 / var(--tw-bg-opacity));
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.btn2::before{
-  position: absolute;
-  top: 0.25rem;
-  left: 0.25rem;
-  z-index: -1;
-  height: 100%;
-  width: 100%;
-  border-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: rgb(55 65 81 / var(--tw-border-opacity));
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-  --tw-content: '';
-  content: var(--tw-content);
-}
-
-.btn2:hover{
-  top: 0px;
-  left: 0px;
-}
-
-.btn2:hover::before{
-  top: 0px;
-  content: var(--tw-content);
-  left: 0px;
-}
-
 .btn4{
   position: relative;
   border-radius: 1.5rem;
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  background-image: linear-gradient(to left, var(--tw-gradient-stops));
   --tw-gradient-from: #7e22ce;
   --tw-gradient-to: rgb(126 34 206 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #1d4ed8;
   padding-left: 1.75rem;
   padding-right: 1.75rem;
   padding-top: 1rem;
@@ -612,15 +566,12 @@ video {
 }
 
 .btn4:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
 
 .btn5{
   position: relative;
-  border-radius: 9999px;
+  border-radius: 0.75rem;
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
   --tw-gradient-from: #7e22ce;
   --tw-gradient-to: rgb(126 34 206 / 0);
@@ -636,8 +587,6 @@ video {
 }
 
 .btn5:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
@@ -686,6 +635,11 @@ video {
 .my-7{
   margin-top: 1.75rem;
   margin-bottom: 1.75rem;
+}
+
+.my-1{
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
 }
 
 .mt-20{
@@ -867,12 +821,12 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.grid-cols-1{
-  grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -903,16 +857,21 @@ video {
   gap: 7rem;
 }
 
-.gap-3{
-  gap: 0.75rem;
-}
-
 .gap-8{
   gap: 2rem;
 }
 
 .gap-6{
   gap: 1.5rem;
+}
+
+.gap-x-2{
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
+.gap-y-2{
+  row-gap: 0.5rem;
 }
 
 .space-y-0 > :not([hidden]) ~ :not([hidden]){
@@ -1050,10 +1009,6 @@ video {
   background-color: hsl(255 11% 22% / var(--tw-bg-opacity));
 }
 
-.bg-transparent{
-  background-color: transparent;
-}
-
 .bg-darkBlue{
   --tw-bg-opacity: 1;
   background-color: hsl(217 28% 15% / var(--tw-bg-opacity));
@@ -1071,6 +1026,12 @@ video {
 
 .bg-gradient-to-r{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+.from-purple-700{
+  --tw-gradient-from: #7e22ce;
+  --tw-gradient-to: rgb(126 34 206 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
 .object-cover{
@@ -1165,6 +1126,10 @@ video {
   text-align: center;
 }
 
+.text-right{
+  text-align: right;
+}
+
 .text-start{
   text-align: start;
 }
@@ -1248,6 +1213,11 @@ video {
 .text-blue-600{
   --tw-text-opacity: 1;
   color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.text-limegreen{
+  --tw-text-opacity: 1;
+  color: rgb(50 205 50 / var(--tw-text-opacity));
 }
 
 .text-gray-900{
