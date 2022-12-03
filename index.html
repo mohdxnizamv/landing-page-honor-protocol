@@ -1,718 +1,628 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-    <head>
-        <link rel="stylesheet" href="app/css/style.css" />
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <link rel="stylesheet" href="app/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <title>Honor Protocol UNDER MAINTENANCE</title>
+    <title>Honor Protocol UNDER MAINTENANCE</title>
 
-        <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/ipfs/dist/index.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/ipfs/dist/index.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-        <style>
-            body {
-                background-image: url('./app/image/bg.jpg');
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-position: center;
-                background-blend-mode: saturation;
-                margin: auto;
-            }
-        </style>
-    </head>
-    <body class="font-Josefin text-white">
-        <!-- Navbar  -->
-        <section id="home">
-            <!-- Hero Container -->
-            <div class="container mx-auto max-w-6xl px-6 py-12">
-                <!-- Menu/Logo Container -->
-                <nav class="flex items-center justify-between font-medium">
-                    <!-- Logo -->
-                    <img
-                        src="app/image/logo.png"
-                        class="w-12 rounded-full"
-                        id="logo"
-                        alt="logo"
-                    />
-                    <!-- Menu -->
-                    <div class="hidden h-10 md:flex md:space-x-8">
-                        <div class="group">
-                            <a href="#hero">About Us</a>
-                            <div
-                                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-                            ></div>
-                        </div>
-                        <div class="group">
-                            <a href="https://t.me/honorprotocolofficial"
-                                >Community</a
-                            >
-                            <div
-                                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-                            ></div>
-                        </div>
-                        <div class="group">
-                            <a href="#team">Team</a>
-                            <div
-                                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-                            ></div>
-                        </div>
-                        <div class="group">
-                            <a href="#">Market</a>
-                            <div
-                                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-                            ></div>
-                        </div>
-                        <div class="group">
-                            <a href="#roadmap">Roadmap</a>
-                            <div
-                                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-                            ></div>
-                        </div>
-                    </div>
-                    <!-- Hamburger Button -->
-                    <div class="md:hidden">
-                        <button
-                            id="menu-btn"
-                            class="hamburger z-30 block focus:outline-none md:hidden"
-                        >
-                            <span class="hamburger-top"></span>
-                            <span class="hamburger-middle"></span>
-                            <span class="hamburger-bottom"></span>
-                        </button>
-                    </div>
-                </nav>
-
-                <!-- Mobile Menu -->
-                <div
-                    id="menu"
-                    class="m-h-screen fixed inset-0 z-20 hidden h-full w-full flex-col items-center divide-y divide-gray-500 self-end bg-veryDarkBlue px-6 py-1 pt-24 pb-4 capitalize tracking-widest text-white opacity-90"
-                >
-                    <div class="w-full py-3 text-center">
-                        <div class="w-full py-3 text-center">
-                            <a href="#team" class="hover:text-softRed block"
-                                >Team</a
-                            >
-                        </div>
-                        <a href="#roadmap" class="hover:text-softRed block"
-                            >Roadmap</a
-                        >
-                    </div>
-                    <div class="w-full py-3 text-center">
-                        <a id="connect" class="hover:text-softRed block"
-                            >Connect Wallet</a
-                        >
-                    </div>
-                    <div class="w-full py-3 text-center">
-                        <a href="#" class="hover:text-softRed block"
-                            >Community</a
-                        >
-                    </div>
-                </div>
+    <style>
+      body {
+        background-image: url('./app/image/bg.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        background-blend-mode: saturation;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body class="font-Josefin text-white">
+    <!-- Navbar  -->
+    <section id="home">
+      <!-- Hero Container -->
+      <div class="container mx-auto max-w-6xl px-6 py-12">
+        <!-- Menu/Logo Container -->
+        <nav class="flex items-center justify-between font-medium">
+          <!-- Logo -->
+          <img
+            src="app/image/logo.png"
+            class="w-12 rounded-full"
+            id="logo"
+            alt="logo"
+          />
+          <!-- Menu -->
+          <div class="hidden h-10 md:flex md:space-x-8">
+            <div class="font-Alata">
+              <a href="#hero">About Us</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-50"
+              ></div>
             </div>
-        </section>
-        <!--  -->
-        <section id="PAGE UNDER MAINTENANCE">
-            <div
-                class="text-center font-mono text-3xl font-extrabold text-red-700"
+            <div class="font-Alata">
+              <a href="https://t.me/honorprotocolofficial">Community</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-50"
+              ></div>
+            </div>
+            <div class="font-Alata">
+              <a href="#team">Team</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-50"
+              ></div>
+            </div>
+            <div class="font-Alata">
+              <a href="#">Market</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-50"
+              ></div>
+            </div>
+            <div class="font-Alata">
+              <a href="#roadmap">Roadmap</a>
+              <div
+                class="mx-2 group-hover:border-b group-hover:border-blue-50"
+              ></div>
+            </div>
+          </div>
+          <!-- Hamburger Button -->
+          <div class="md:hidden">
+            <button
+              id="menu-btn"
+              class="hamburger z-30 block focus:outline-none md:hidden"
             >
-                PAGE UNDER MAINTENANCE / AND THIS IS TESTNET NETWORK
-            </div>
-        </section>
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
+            </button>
+          </div>
+        </nav>
 
-        <!-- Hero Section -->
-        <section id="hero">
-            <!-- Flex Container -->
-            <div
-                class="container mx-auto mt-20 flex flex-col-reverse items-center space-y-0 px-6 md:flex-row md:space-y-0"
-            >
-                <!-- Left Item -->
-                <div class="mb-14 flex flex-col space-y-8 md:w-1/2">
-                    <h1
-                        class="max-w-md text-center text-4xl md:text-left md:text-5xl"
-                    >
-                        What is Honor Protocol?
-                    </h1>
-                    <p class="max-w-lg md:text-left">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Repellat repudiandae suscipit consequatur, minus
-                        sint accusamus, similique nemo ratione dolore, aut quas.
-                        Suscipit non recusandae animi libero iusto officia
-                        repellat. Repudiandae rerum voluptate natus libero
-                        accusamus mollitia saepe beatae animi neque! Dignissimos
-                        sit molestias, incidunt aliquam vitae consequatur,
-                        tempore, minus voluptatum rerum autem nesciunt!
-                    </p>
-                    <p class="max-w-lg md:text-left">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Reprehenderit, consequatur necessitatibus nostrum
-                        aliquam dolores vero minima maxime veniam mollitia enim
-                        fuga quo. Explicabo assumenda, illo fugit perspiciatis
-                        odio saepe omnis, voluptatem doloremque expedita veniam
-                        minus deserunt quia dolores! Consequuntur id dolorum
-                        fugiat consequatur fugit veritatis et sint. Pariatur
-                        nulla corrupti dolorem magnam rem impedit. Earum maxime
-                        rerum at, pariatur error deleniti quia magni laborum
-                        totam ipsa consectetur quos omnis. Repellendus commodi
-                        libero consectetur veritatis sunt aut adipisci est
-                        excepturi fuga.
-                    </p>
-
-                    <div class="flex justify-center space-x-3 md:justify-start">
-                        <a
-                            href="https://staking.honorprotocol.net/"
-                            class="btn2"
-                            >Staking</a
-                        >
-                        <a href="https://www.mohdxnizamv.store/" class="btn2">
-                            Dapp Testnet
-                        </a>
-                        <a
-                            href="https://privatesale.honorprotocol.net/"
-                            class="btn2"
-                            >Dapp Mainnet</a
-                        >
-                    </div>
-                </div>
-                <!-- Image -->
-                <div class="md:w-1/2">
-                    <img
-                        src="./app/image/bgb.png"
-                        class="mx-auto"
-                        alt="Intro illustration"
-                    />
-                </div>
-            </div>
-        </section>
-
-        <!-- Features Section -->
-        <section id="features">
-            <!-- Flex container -->
-            <div
-                class="container mx-auto mt-20 flex flex-col space-y-12 px-4 md:flex-row md:space-y-0"
-            >
-                <!-- Numbered List -->
-                <div class="flex flex-col space-y-8 md:w-1/2">
-                    <!-- List Item 1 -->
-                    <div
-                        class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6"
-                    >
-                        <!-- Heading -->
-                        <div
-                            class="bg-softGray rounded-l-full md:bg-transparent"
-                        >
-                            <div class="flex items-center space-x-2">
-                                <div class="btn2">01</div>
-                                <h3
-                                    class="text-base font-semibold md:mb-4 md:hidden"
-                                >
-                                    Multi-Chain Wallet
-                                </h3>
-                            </div>
-                        </div>
-                        <div>
-                            <h3
-                                class="mb-4 hidden text-lg font-semibold md:block"
-                            >
-                                Multi-Chain Wallet
-                            </h3>
-                            <p class="">
-                                A fully decentralized multi-chain with security
-                                feature to keep your crypto secure.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- List Item 2 -->
-                    <div
-                        class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6"
-                    >
-                        <!-- Heading -->
-                        <div
-                            class="bg-softGray rounded-l-full md:bg-transparent"
-                        >
-                            <div class="flex items-center space-x-2">
-                                <div class="btn2">02</div>
-                                <h3
-                                    class="text-base font-semibold md:mb-4 md:hidden"
-                                >
-                                    Decentralized Exchanges
-                                </h3>
-                            </div>
-                        </div>
-                        <div>
-                            <h3
-                                class="mb-4 hidden text-lg font-semibold md:block"
-                            >
-                                Decentralized Exchanges
-                            </h3>
-                            <p class="">
-                                Our DEX provides numerous cryptocurrency assets
-                                and AI portfolios with shariah-based guidelines.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- List Item 3 -->
-                    <div
-                        class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6"
-                    >
-                        <!-- Heading -->
-                        <div
-                            class="bg-softGray rounded-l-full md:bg-transparent"
-                        >
-                            <div class="flex items-center space-x-2">
-                                <div class="btn2">03</div>
-                                <h3
-                                    class="text-base font-semibold md:mb-4 md:hidden"
-                                >
-                                    Decentralized Finance
-                                </h3>
-                            </div>
-                        </div>
-                        <div>
-                            <h3
-                                class="mb-4 hidden text-lg font-semibold md:block"
-                            >
-                                Decentralized Finance
-                            </h3>
-                            <p class="">
-                                According to most of DeFi projects are not Halal
-                                and we are just right in the conner to make it
-                                different.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Numbered List -->
-                <div class="flex flex-col space-y-8 md:w-1/2">
-                    <!-- List Item 4 -->
-                    <div
-                        class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6"
-                    >
-                        <!-- Heading -->
-                        <div
-                            class="bg-softGray rounded-l-full md:bg-transparent"
-                        >
-                            <div class="flex items-center space-x-2">
-                                <div class="btn2">04</div>
-                                <h3
-                                    class="text-base font-semibold md:mb-4 md:hidden"
-                                >
-                                    Marketplace
-                                </h3>
-                            </div>
-                        </div>
-                        <div>
-                            <h3
-                                class="mb-4 hidden text-lg font-semibold md:block"
-                            >
-                                Marketplace
-                            </h3>
-                            <p class="">
-                                A Decentralized marketplace for digital art, NFT
-                                project and community projects.
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- List Item 5 -->
-                    <div
-                        class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6"
-                    >
-                        <!-- Heading -->
-                        <div
-                            class="bg-softGray rounded-l-full md:bg-transparent"
-                        >
-                            <div class="flex items-center space-x-2">
-                                <div class="btn2">05</div>
-                                <h3
-                                    class="text-base font-semibold md:mb-4 md:hidden"
-                                >
-                                    Decentralized Autonomous Organization
-                                </h3>
-                            </div>
-                        </div>
-                        <div>
-                            <h3
-                                class="mb-4 hidden text-lg font-semibold md:block"
-                            >
-                                Decentralized Autonomous Organization
-                            </h3>
-                            <p class="">
-                                Decentralized Autonomous Organization Empowering
-                                holders an opportunity to vote!!
-                            </p>
-                        </div>
-                    </div>
-
-                    <!-- List Item 6 -->
-                    <div
-                        class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6"
-                    >
-                        <!-- Heading -->
-                        <div
-                            class="bg-softGray rounded-l-full md:bg-transparent"
-                        >
-                            <div class="flex items-center space-x-2">
-                                <div class="btn2">06</div>
-                                <h3
-                                    class="text-base font-semibold md:mb-4 md:hidden"
-                                >
-                                    Crypto Citizen
-                                </h3>
-                            </div>
-                        </div>
-                        <div>
-                            <h3
-                                class="mb-4 hidden text-lg font-semibold md:block"
-                            >
-                                Crypto Citizen
-                            </h3>
-                            <p class="">
-                                Knowledge is very important in crypto, is our
-                                responsibility to educate our CITIZEN.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Team member -->
-        <section id="team">
-            <div class="bg-base-100 py-20">
-                <div class="container mx-auto px-6 text-center md:px-12">
-                    <h2 class="text-center text-2xl font-bold md:text-4xl">
-                        Honor Protocol, Team Members.
-                    </h2>
-                    <p class="lg:mx-auto lg:w-8/12">
-                        Our Honor Protocol team believes that the development of
-                        our unique projects will benefit our powerful and
-                        prosperous community to achieve the objective together.
-                    </p>
-
-                    <div
-                        class="mt-20 mb-10 grid gap-28 py-20 md:grid-cols-3 md:gap-12"
-                    >
-                        <div class="space-y-8">
-                            <div
-                                class="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]"
-                            >
-                                <img
-                                    class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
-                                    src="#"
-                                    alt="man"
-                                    loading="lazy"
-                                    width="640"
-                                    height="805"
-                                />
-                            </div>
-                            <div class="space-y-4 text-center">
-                                <div>
-                                    <h4 class="text-2xl">mohdx nizamv</h4>
-                                    <span class="block text-sm"
-                                        >CEO & Co Founder</span
-                                    >
-                                </div>
-                                <a
-                                    href=""
-                                    class="mx-auto block w-max text-blue-600"
-                                    >View Bio</a
-                                >
-                            </div>
-                        </div>
-
-                        <div class="space-y-8">
-                            <div
-                                class="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]"
-                            >
-                                <img
-                                    class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
-                                    src="#"
-                                    alt="man"
-                                    loading="lazy"
-                                    width="1000"
-                                    height="667"
-                                />
-                            </div>
-                            <div class="space-y-4 text-center">
-                                <div>
-                                    <h4 class="text-2xl">mohdx nizamv</h4>
-                                    <span class="block text-sm"
-                                        >Founder & CFO</span
-                                    >
-                                </div>
-                                <a
-                                    href=""
-                                    class="mx-auto block w-max text-blue-600"
-                                    >View Bio</a
-                                >
-                            </div>
-                        </div>
-
-                        <div class="space-y-8">
-                            <div
-                                class="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]"
-                            >
-                                <img
-                                    class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
-                                    src="#"
-                                    alt="man"
-                                    loading="lazy"
-                                    width="1000"
-                                    height="667"
-                                />
-                            </div>
-                            <div class="space-y-4 text-center">
-                                <div>
-                                    <h4 class="text-2xl">mohdx nizamv</h4>
-                                    <span class="block text-sm"
-                                        >Development</span
-                                    >
-                                </div>
-                                <a
-                                    href=""
-                                    class="mx-auto block w-max text-blue-600"
-                                    >View Bio</a
-                                >
-                            </div>
-                        </div>
-                    </div>
-                    <button
-                        class="hover: focus:ring-2; border-softYellow bg-softYellow scale-105 transform rounded-full px-6 py-4 shadow-sm focus:outline-none"
-                    >
-                        Load more
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Road map Section -->
-        <section id="roadmap">
-            <div class="mx-auto mt-20 max-w-6xl px-5 text-start">
-                <p class="text-center text-4xl font-semibold">
-                    Honor Protocol, Roadmap.
-                </p>
-                <div class="mt-7 flex flex-col md:flex-row md:space-x-6">
-                    <a
-                        href="#"
-                        class="mx-auto my-auto hidden max-w-xl space-y-3 rounded-lg p-6 font-mono shadow-xl hover:bg-transparent md:block"
-                    >
-                        <div class="flex items-center gap-3">
-                            <h3 class="btn2">Q1</h3>
-                        </div>
-                        <p class="group-hover:text-white">
-                            <li>NFT & TOKEN</li>
-                            <li>MARKETPLACE</li>
-                            <li>NFT LIQIUIDITY (INTIAL 20%)</li>
-                            <li>NODES @ YIELD RANK</li>
-                            <li>NFT MINING</li>
-                            <li>
-                                PROTOCOL ENGINE & TREASURY RESERVED (BUYBACK)
-                            </li>
-                        </p>
-                    </a>
-                    <!--  -->
-                    <a
-                        href="#"
-                        class="mx-auto my-7 block max-w-xl space-y-3 rounded-lg p-6 font-mono shadow-xl hover:bg-transparent"
-                    >
-                        <div class="flex items-center gap-3">
-                            <h3 class="btn2">Q2</h3>
-                        </div>
-                        <p class="group-hover:text-white">
-                            <li>NFT STAKING</li>
-                            <li>TOKEN STAKING</li>
-                            <li>PROTOCOL ENGINE V2.0 (+ STAKE FLOWCHART)</li>
-                            <li>NFT LIQIUIDITY UP TO (25% - 30%)</li>
-                            <li>DAPPS V2</li>
-                        </p>
-                    </a>
-                    <!--  -->
-                    <a
-                        href="#"
-                        class="mx-auto my-7 block max-w-xl space-y-3 rounded-lg p-6 font-mono shadow-xl hover:bg-transparent"
-                    >
-                        <div class="flex items-center">
-                            <h3 class="btn2">Q3</h3>
-                        </div>
-                        <p class="group-hover:text-white">
-                            <li>NFT LIQIUIDITY UP TO (35% - 40%)</li>
-                            <li>
-                                PROTOCOL ENGINE V3.0 (+ HUB & STAKE FLOWCHART)
-                            </li>
-                            <li>STAKING & NFT MINING V2.0</li>
-                            <li>TREASURY HUB</li>
-                            <li>EMBLEM NFT</li>
-                        </p>
-                    </a>
-                    <!--  -->
-                    <a
-                        href="#"
-                        class="mx-auto my-7 block max-w-xl space-y-3 rounded-lg p-6 font-mono shadow-xl hover:bg-transparent"
-                    >
-                        <div class="flex items-center">
-                            <h3 class="btn2">Q4</h3>
-                        </div>
-                        <p class="group-hover:text-white">
-                            <li>ANYTHING TO EARN (ATE)</li>
-                            <li>
-                                REVAMPED YIELD RANK TO SUPERLINK WITH STAKING,
-                                HUB & ATE
-                            </li>
-                            <li>
-                                PROTOCOL ENGINE V4.0 (+ ATE & SUPERLINK
-                                FLOWCHART)
-                            </li>
-                            <li>NFT LIQIUIDITY UP TO (45% - 50%)</li>
-                            <li>
-                                RESEARCH AND DEVELOPMENT OF FUTURE ECOSYSTEM
-                                PROJECTS
-                            </li>
-                        </p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Back to top Start -->
-        <a
-            href="#home"
-            class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-darkBlue p-4 hover:animate-pulse"
-            id="to-top"
+        <!-- Mobile Menu -->
+        <div
+          id="menu"
+          class="m-h-screen fixed inset-0 z-20 hidden h-full w-full flex-col items-center divide-y divide-gray-500 self-end bg-veryDarkBlue px-6 py-1 pt-24 pb-4 capitalize tracking-widest text-white opacity-90"
         >
-            <span
-                class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"
-            ></span>
-        </a>
-        <!-- Back to top End -->
-
-        <!-- Footer -->
-        <section id="footer">
-            <div class="border-base-100 bg-base-100 mt-20">
-                <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                    <div class="grid grid-cols-1 gap-8 pt-8 lg:grid-cols-2">
-                        <div>
-                            <img
-                                class="h-10 w-auto rounded-full"
-                                alt="honorprotocol"
-                                src="app/image/logo.png"
-                            />
-                            <p class="mt-4 text-sm">
-                                Technology needs to support human initiatives
-                                not substitute them.
-                            </p>
-                            <a
-                                class="text-textPrimary dark:text-dmTextPrimary mt-4 text-sm hover:underline"
-                                href="nizam.active@gmail.com"
-                                id="email"
-                                >nizam.active@gmail.com</a
-                            >
-                        </div>
-                        <div class="grid grid-cols-1 gap-8 xl:grid-cols-2">
-                            <div class="text-sm">
-                                <p
-                                    class="text-textPrimary dark:text-dmTextPrimary mb-2"
-                                >
-                                    Our community
-                                </p>
-                                <ul>
-                                    <li class="mt-2">
-                                        <a
-                                            class="hover:underline"
-                                            href="https://twitter.com/HonorProtocol"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            >Twitter</a
-                                        >
-                                    </li>
-                                    <li class="mt-2">
-                                        <a
-                                            class="hover:underline"
-                                            href="https://dsc.gg/honorprotocolofficial"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            >Discord</a
-                                        >
-                                    </li>
-                                    <li class="mt-2">
-                                        <a
-                                            class="hover:underline"
-                                            href="https://www.youtube.com/channel/UCjFIbyad_Pj_L17C9F7nIRw"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            >YouTube</a
-                                        >
-                                    </li>
-                                    <li class="mt-2">
-                                        <a
-                                            class="hover:underline"
-                                            href="https://t.me/honorprotocolofficial"
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            >Telegram</a
-                                        >
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="text-sm">
-                                <p
-                                    class="text-textPrimary dark:text-dmTextPrimary mb-2"
-                                >
-                                    Company
-                                </p>
-                                <ul>
-                                    <li class="mt-2">
-                                        <a
-                                            class="hover:underline"
-                                            href=""
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            >About us</a
-                                        >
-                                    </li>
-                                    <li class="mt-2">
-                                        <a
-                                            class="hover:underline"
-                                            href=""
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            >Career</a
-                                        >
-                                    </li>
-                                    <li class="mt-2">
-                                        <a
-                                            class="hover:underline"
-                                            href=""
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            >Terms and Conditions</a
-                                        >
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <p class="pt-16 pb-8 text-center text-sm">
-                        © 2022 Honor Protocol. All Rights Reserved.
-                    </p>
-                </div>
-                <div
-                    class="from-brandPrimary to-brandSecondary h-4 bg-gradient-to-r"
-                ></div>
+          <div class="w-full py-3 text-center">
+            <div class="w-full py-3 text-center">
+              <a href="#roadmap" class="hover:text-softRed block">Community</a>
             </div>
-        </section>
-        <!--  -->
+            <a
+              href="https://staking.honorprotocol.net/"
+              class="hover:text-softRed block"
+              >Staking</a
+            >
+          </div>
+          <div class="w-full py-3 text-center">
+            <a
+              href="https://privatesale.honorprotocol.net/"
+              class="hover:text-softRed block"
+              >Private Sale</a
+            >
+          </div>
+          <div class="w-full py-3 text-center">
+            <a href="#" class="hover:text-softRed block"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+    <section id="PAGE UNDER MAINTENANCE">
+      <div class="text-center font-mono text-3xl font-extrabold text-red-700">
+        PAGE UNDER MAINTENANCE / AND THIS IS TESTNET NETWORK
+      </div>
+    </section>
 
-        <script>
-            $(document).ready(function () {
-                console.log('connect wallet by own self')
-                $('#email').text('nizam.active.gmail.com')
-            })
-        </script>
-    </body>
+    <!-- Hero Section -->
+    <section id="hero">
+      <!-- Flex Container -->
+      <div
+        class="container mx-auto mt-20 flex flex-col-reverse items-center space-y-0 px-6 md:flex-row md:space-y-0"
+      >
+        <!-- Left Item -->
+        <div class="mb-14 flex flex-col space-y-8 md:w-1/2">
+          <h1
+            class="max-w-md text-center text-4xl font-extrabold md:text-left md:text-5xl"
+          >
+            Welcome to Honor Protocol
+          </h1>
+          <p class="max-w-lg md:text-left">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
+            repudiandae suscipit consequatur, minus sint accusamus, similique
+            nemo ratione dolore, aut quas. Suscipit non recusandae animi libero
+            iusto officia repellat. Repudiandae rerum voluptate natus libero
+            accusamus mollitia saepe beatae animi neque! Dignissimos sit
+            molestias, incidunt aliquam vitae consequatur, tempore, minus
+            voluptatum rerum autem nesciunt!
+          </p>
+          <p class="max-w-lg md:text-left">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit, consequatur necessitatibus nostrum aliquam dolores
+            vero minima maxime veniam mollitia enim fuga quo. Explicabo
+            assumenda, illo fugit perspiciatis odio saepe omnis, voluptatem
+            doloremque expedita veniam minus deserunt quia dolores! Consequuntur
+            id dolorum fugiat consequatur fugit veritatis et sint. Pariatur
+          </p>
+
+          <span>
+            <p>Honor Contract Address:</p>
+            <div class="font-semibold">0x200000000000000000123456</div>
+          </span>
+
+          <div class="flex justify-center space-x-3 md:justify-start">
+            <a href="https://testnet.honorprotocol.net/" class="btn4"
+              >Dapps Mainnet</a
+            >
+            <a href="#" class="btn4">Dapps Mobile</a>
+          </div>
+        </div>
+        <!-- Image -->
+        <div class="md:w-1/2">
+          <img
+            src="./app/image/bgb.png"
+            class="mx-auto"
+            alt="Intro illustration"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+      <!-- Flex container -->
+      <div
+        class="container mx-auto mt-20 flex flex-col space-y-12 px-4 md:flex-row md:space-y-0"
+      >
+        <!-- Numbered List -->
+        <div class="flex flex-col space-y-8 md:w-1/2">
+          <!-- List Item 1 -->
+          <div
+            class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6"
+          >
+            <!-- Heading -->
+            <div class="bg-softGray rounded-l-full md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div class="btn5">01</div>
+                <h3 class="text-base font-semibold md:mb-4 md:hidden">
+                  Multi-Chain Wallet
+                </h3>
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-4 hidden text-lg font-semibold md:block">
+                Multi-Chain Wallet
+              </h3>
+              <p class="">
+                A fully decentralized multi-chain with security feature to keep
+                your crypto secure.
+              </p>
+            </div>
+          </div>
+
+          <!-- List Item 2 -->
+          <div
+            class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6"
+          >
+            <!-- Heading -->
+            <div class="bg-softGray rounded-l-full md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div class="btn5">02</div>
+                <h3 class="text-base font-semibold md:mb-4 md:hidden">
+                  Decentralized Exchanges
+                </h3>
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-4 hidden text-lg font-semibold md:block">
+                Decentralized Exchanges
+              </h3>
+              <p class="">
+                Our DEX provides numerous cryptocurrency assets and AI
+                portfolios with shariah-based guidelines.
+              </p>
+            </div>
+          </div>
+
+          <!-- List Item 3 -->
+          <div
+            class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6"
+          >
+            <!-- Heading -->
+            <div class="bg-softGray rounded-l-full md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div class="btn5">03</div>
+                <h3 class="text-base font-semibold md:mb-4 md:hidden">
+                  Decentralized Finance
+                </h3>
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-4 hidden text-lg font-semibold md:block">
+                Decentralized Finance
+              </h3>
+              <p class="">
+                According to most of DeFi projects are not Halal and we are just
+                right in the conner to make it different.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Numbered List -->
+        <div class="flex flex-col space-y-8 md:w-1/2">
+          <!-- List Item 4 -->
+          <div
+            class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6"
+          >
+            <!-- Heading -->
+            <div class="bg-softGray rounded-l-full md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div class="btn5">04</div>
+                <h3 class="text-base font-semibold md:mb-4 md:hidden">
+                  Marketplace
+                </h3>
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-4 hidden text-lg font-semibold md:block">
+                Marketplace
+              </h3>
+              <p class="">
+                A Decentralized marketplace for digital art, NFT project and
+                community projects.
+              </p>
+            </div>
+          </div>
+
+          <!-- List Item 5 -->
+          <div
+            class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6"
+          >
+            <!-- Heading -->
+            <div class="bg-softGray rounded-l-full md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div class="btn5">05</div>
+                <h3 class="text-base font-semibold md:mb-4 md:hidden">
+                  Decentralized Autonomous Organization
+                </h3>
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-4 hidden text-lg font-semibold md:block">
+                Decentralized Autonomous Organization
+              </h3>
+              <p class="">
+                Decentralized Autonomous Organization Empowering holders an
+                opportunity to vote!!
+              </p>
+            </div>
+          </div>
+
+          <!-- List Item 6 -->
+          <div
+            class="flex flex-col space-y-3 md:flex-row md:space-y-0 md:space-x-6"
+          >
+            <!-- Heading -->
+            <div class="bg-softGray rounded-l-full md:bg-transparent">
+              <div class="flex items-center space-x-2">
+                <div class="btn5">06</div>
+                <h3 class="text-base font-semibold md:mb-4 md:hidden">
+                  Crypto Citizen
+                </h3>
+              </div>
+            </div>
+            <div>
+              <h3 class="mb-4 hidden text-lg font-semibold md:block">
+                Crypto Citizen
+              </h3>
+              <p class="">
+                Knowledge is very important in crypto, is our responsibility to
+                educate our CITIZEN.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team member -->
+    <section id="team">
+      <div class="bg-base-100 py-20">
+        <div class="container mx-auto px-6 text-center md:px-12">
+          <h2 class="text-center text-2xl font-bold md:text-4xl">
+            Honor Protocol, Team Development.
+          </h2>
+          <p class="lg:mx-auto lg:w-8/12">
+            Our Honor Protocol team believes that the development of our unique
+            projects will benefit our powerful and prosperous community to
+            achieve the objective together.
+          </p>
+
+          <div class="mt-20 mb-10 grid gap-28 py-20 md:grid-cols-3 md:gap-12">
+            <div class="space-y-8">
+              <div
+                class="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]"
+              >
+                <img
+                  class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+                  loading="lazy"
+                  width="640"
+                  height="805"
+                />
+              </div>
+              <div class="space-y-4 text-center">
+                <div>
+                  <h4 class="text-2xl">Mr. Duan</h4>
+                  <span class="block text-sm">Founder, Dapps & Solidity</span>
+                </div>
+                <a href="#" class="mx-auto block w-max text-blue-600"
+                  >View Bio</a
+                >
+              </div>
+            </div>
+
+            <div class="space-y-8">
+              <div
+                class="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]"
+              >
+                <img
+                  class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+                  loading="lazy"
+                  width="1000"
+                  height="667"
+                />
+              </div>
+              <div class="space-y-4 text-center">
+                <div>
+                  <h4 class="text-2xl">Mr. Mohdx Nizamv</h4>
+                  <span class="block text-sm">Mobile Dapps, Web Develop</span>
+                </div>
+                <a href="#" class="mx-auto block w-max text-blue-600"
+                  >View Bio</a
+                >
+              </div>
+            </div>
+
+            <div class="space-y-8">
+              <div
+                class="mx-auto -mt-16 h-32 w-32 rotate-45 overflow-hidden rounded-[2rem]"
+              >
+                <img
+                  class="mx-auto h-full w-full -rotate-45 scale-125 object-cover transition duration-300 group-hover:scale-[1.4]"
+                  loading="lazy"
+                  width="1000"
+                  height="667"
+                />
+              </div>
+              <div class="space-y-4 text-center">
+                <div>
+                  <h4 class="text-2xl">Mr. Kazuha</h4>
+                  <span class="block text-sm">Graphic Design</span>
+                </div>
+                <a href="#" class="mx-auto block w-max text-blue-600"
+                  >View Bio</a
+                >
+              </div>
+            </div>
+          </div>
+          <button
+            class="hover: focus:ring-2; border-softYellow bg-softYellow scale-105 transform rounded-full px-6 py-4 shadow-sm focus:outline-none"
+          >
+            Load more
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Road map Section -->
+    <section id="roadmap">
+      <div class="mx-auto mt-20 max-w-6xl px-5 text-start">
+        <p class="text-center text-4xl font-semibold">
+          Honor Protocol, Roadmap.
+        </p>
+        <div class="mt-7 flex flex-col md:flex-row md:space-x-6">
+          <a
+            href="#"
+            class="mx-auto my-7 block max-w-xl space-y-3 rounded-xl bg-transparent p-6 font-mono shadow-xl"
+          >
+            <div class="flex items-center gap-3">
+              <h3 class="btn2">Q1</h3>
+            </div>
+            <p class="group-hover:text-white">
+              <li>NFT & TOKEN</li>
+              <li>MARKETPLACE</li>
+              <li>NFT LIQIUIDITY (INTIAL 20%)</li>
+              <li>NODES @ YIELD RANK</li>
+              <li>NFT MINING</li>
+              <li>PROTOCOL ENGINE & TREASURY RESERVED (BUYBACK)</li>
+            </p>
+          </a>
+          <!--  -->
+          <a
+            href="#"
+            class="mx-auto my-7 block max-w-xl space-y-3 rounded-xl bg-transparent p-6 font-mono shadow-xl"
+          >
+            <div class="flex items-center gap-3">
+              <h3 class="btn2">Q2</h3>
+            </div>
+            <p class="group-hover:text-white">
+              <li>NFT STAKING</li>
+              <li>TOKEN STAKING</li>
+              <li>PROTOCOL ENGINE V2.0 (+ STAKE FLOWCHART)</li>
+              <li>NFT LIQIUIDITY UP TO (25% - 30%)</li>
+              <li>DAPPS V2</li>
+            </p>
+          </a>
+          <!--  -->
+          <a
+            href="#"
+            class="mx-auto my-7 block max-w-xl space-y-3 rounded-xl bg-transparent p-6 font-mono shadow-xl"
+          >
+            <div class="flex items-center">
+              <h3 class="btn2">Q3</h3>
+            </div>
+            <p class="group-hover:text-white">
+              <li>NFT LIQIUIDITY UP TO (35% - 40%)</li>
+              <li>PROTOCOL ENGINE V3.0 (+ HUB & STAKE FLOWCHART)</li>
+              <li>STAKING & NFT MINING V2.0</li>
+              <li>TREASURY HUB</li>
+              <li>EMBLEM NFT</li>
+            </p>
+          </a>
+          <!--  -->
+          <a
+            href="#"
+            class="mx-auto my-7 block max-w-xl space-y-3 rounded-xl bg-transparent p-6 font-mono shadow-xl"
+          >
+            <div class="flex items-center">
+              <h3 class="btn2">Q4</h3>
+            </div>
+            <p class="group-hover:text-white">
+              <li>ANYTHING TO EARN (ATE)</li>
+              <li>REVAMPED YIELD RANK TO SUPERLINK WITH STAKING, HUB & ATE</li>
+              <li>PROTOCOL ENGINE V4.0 (+ ATE & SUPERLINK FLOWCHART)</li>
+              <li>NFT LIQIUIDITY UP TO (45% - 50%)</li>
+              <li>RESEARCH AND DEVELOPMENT OF FUTURE ECOSYSTEM PROJECTS</li>
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back to top Start -->
+    <a
+      href="#home"
+      class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-darkBlue p-4 hover:animate-pulse"
+      id="to-top"
+    >
+      <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
+    </a>
+    <!-- Back to top End -->
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="border-base-100 bg-base-100 mt-20">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="grid grid-cols-1 gap-8 pt-8 lg:grid-cols-2">
+            <div>
+              <img
+                class="h-10 w-auto rounded-full"
+                alt="honorprotocol"
+                src="app/image/logo.png"
+              />
+              <p class="mt-4 text-sm">
+                Technology needs to support human initiatives not substitute
+                them.
+              </p>
+              <a
+                class="text-textPrimary dark:text-dmTextPrimary mt-4 text-sm hover:underline"
+                href="nizam.active@gmail.com"
+                id="email"
+                >nizam.active@gmail.com</a
+              >
+            </div>
+            <div class="grid grid-cols-1 gap-8 xl:grid-cols-2">
+              <div class="text-sm">
+                <p class="text-textPrimary dark:text-dmTextPrimary mb-2">
+                  Our community
+                </p>
+                <ul>
+                  <li class="mt-2">
+                    <a
+                      class="hover:underline"
+                      href="https://twitter.com/HonorProtocol"
+                      target="_blank"
+                      rel="noreferrer"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <a
+                      class="hover:underline"
+                      href="https://dsc.gg/honorprotocolofficial"
+                      target="_blank"
+                      rel="noreferrer"
+                      >Discord</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <a
+                      class="hover:underline"
+                      href="https://www.youtube.com/channel/UCjFIbyad_Pj_L17C9F7nIRw"
+                      target="_blank"
+                      rel="noreferrer"
+                      >YouTube</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <a
+                      class="hover:underline"
+                      href="https://t.me/honorprotocolofficial"
+                      target="_blank"
+                      rel="noreferrer"
+                      >Telegram</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="text-sm">
+                <p class="text-textPrimary dark:text-dmTextPrimary mb-2">
+                  Company
+                </p>
+                <ul>
+                  <li class="mt-2">
+                    <a
+                      class="hover:underline"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer"
+                      >About us</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <a
+                      class="hover:underline"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer"
+                      >Career</a
+                    >
+                  </li>
+                  <li class="mt-2">
+                    <a
+                      class="hover:underline"
+                      href=""
+                      target="_blank"
+                      rel="noreferrer"
+                      >Terms and Conditions</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <p class="pt-16 pb-8 text-center text-sm">
+            © 2022 Honor Protocol. All Rights Reserved.
+          </p>
+        </div>
+        <div
+          class="from-brandPrimary to-brandSecondary h-4 bg-gradient-to-r"
+        ></div>
+      </div>
+    </section>
+    <!--  -->
+
+    <script src="./app/js/script.js"></script>
+    <script>
+      $(document).ready(function () {
+        console.log('wallet connect')
+        $('#email').text('wallet connect')
+      })
+    </script>
+  </body>
 </html>
