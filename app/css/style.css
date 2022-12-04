@@ -567,6 +567,7 @@ video {
 
 .btn4:hover{
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  font-weight: 800;
 }
 
 @media (min-width: 360px){
@@ -675,6 +676,10 @@ video {
   margin-bottom: 1rem;
 }
 
+.mt-10{
+  margin-top: 2.5rem;
+}
+
 .mt-2{
   margin-top: 0.5rem;
 }
@@ -753,10 +758,6 @@ video {
 
 .w-full{
   width: 100%;
-}
-
-.w-44{
-  width: 11rem;
 }
 
 .w-max{
@@ -911,12 +912,6 @@ video {
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
-.space-y-4 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
-
 .space-x-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(1rem * var(--tw-space-x-reverse));
@@ -944,10 +939,6 @@ video {
 
 .rounded-full{
   border-radius: 9999px;
-}
-
-.rounded-2xl{
-  border-radius: 1rem;
 }
 
 .rounded-xl{
@@ -1102,6 +1093,10 @@ video {
 
 .pb-8{
   padding-bottom: 2rem;
+}
+
+.pr-5{
+  padding-right: 1.25rem;
 }
 
 .text-center{
@@ -1435,9 +1430,9 @@ video {
     padding-right: 1.5rem;
   }
 
-  .sm\:text-xs{
-    font-size: 0.75rem;
-    line-height: 1rem;
+  .sm\:text-sm{
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 }
 
@@ -1534,8 +1529,8 @@ video {
     width: 66.666667%;
   }
 
-  .lg\:grid-cols-8{
-    grid-template-columns: repeat(8, minmax(0, 1fr));
+  .lg\:grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .lg\:grid-cols-2{
@@ -1549,8 +1544,8 @@ video {
 }
 
 @media (min-width: 1440px){
-  .xl\:grid-cols-8{
-    grid-template-columns: repeat(8, minmax(0, 1fr));
+  .xl\:grid-cols-6{
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .xl\:grid-cols-2{
