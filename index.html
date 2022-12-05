@@ -2,7 +2,6 @@
 <html lang="en" class="scroll-smooth">
  <head>
   <link rel="stylesheet" href="app/css/style.css" />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,9 +9,7 @@
 
   <title>Honor Protocol UNDER MAINTENANCE</title>
 
-  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/ipfs/dist/index.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <style>
@@ -418,7 +415,7 @@
     <h3 class="text-center text-2xl font-bold md:text-4xl">
      Honor Protocol, Roadmap.
     </h3>
-    <p class="lg:mx-auto lg:w-8/12">
+    <p class="text-center lg:mx-auto lg:w-8/12">
      Honor Protocol project roadmap, timeline are extremely important in
      assuring the development continues without delays.
     </p>
@@ -681,10 +678,6 @@
   <script src="./app/js/script.js"></script>
 
   <script>
-   AOS.init()
-  </script>
-
-  <script>
    $(document).ready(function () {
     console.log('wallet connect')
     $('#email').text('honorprotocol.net')
@@ -700,6 +693,10 @@
 
    window.onload = showBrowserWidth
    window.onresize = showBrowserWidth
+  </script>
+
+  <script>
+   AOS.init()
   </script>
  </body>
 </html>
