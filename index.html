@@ -2,15 +2,13 @@
 <html lang="en" class="scroll-smooth">
  <head>
   <link rel="stylesheet" href="app/css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Honor Protocol UNDER MAINTENANCE</title>
-
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <style>
    body {
@@ -105,7 +103,7 @@
   <!--  -->
 
   <section id="PAGE UNDER MAINTENANCE">
-   <div class="text-red-700 text-center font-mono text-3xl font-extrabold">
+   <div class="text-center font-Alata text-3xl font-extrabold text-red">
     UNDER MAINTENANCE
    </div>
   </section>
@@ -141,8 +139,8 @@
      </p>
 
      <span>
-      <p>Honor Contract Address:</p>
-      <div class="font-semibold">0x200000000000000000123456</div>
+      <p class="font-Alata">Honor Contract Address:</p>
+      <div class="font-semibold">0x20000000000000000012345689</div>
      </span>
 
      <div class="flex justify-center space-x-3 md:justify-start">
@@ -568,7 +566,6 @@
   </section>
 
   <!-- Back to top Start -->
-
   <a
    href="#hero"
    class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-darkBlue p-4 hover:animate-pulse"
@@ -675,12 +672,13 @@
   <!--  -->
 
   <section id="semak saiz">
-   <h6 class="pr-5 text-right"></h6>
+   <h7 class="pr-5 text-right"></h7>
   </section>
   <!--  -->
 
   <script src="./app/js/script.js"></script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
   <script>
    $(document).ready(function () {
     console.log('wallet connect')
@@ -692,7 +690,7 @@
    function showBrowserWidth() {
     const width = window.innerWidth
 
-    document.querySelector('h6').innerHTML = `Width: ${width}px`
+    document.querySelector('h7').innerHTML = `Width: ${width}px`
    }
 
    window.onload = showBrowserWidth

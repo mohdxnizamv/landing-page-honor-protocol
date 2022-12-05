@@ -14,9 +14,7 @@ module.exports = {
     Outfit: ['Outfit', 'sans-serif'],
     Josefin: ['Josefin Sans', 'sans-serif'],
    },
-   backgroundImage: {
-    hero: "url('bg.jpg')",
-   },
+
    colors: {
     cyan: 'hsl(180, 66%, 49%)',
     cyanLight: 'hsl(180, 66%, 69%)',
