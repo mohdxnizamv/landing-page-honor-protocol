@@ -2,6 +2,7 @@
 <html lang="en" class="scroll-smooth">
  <head>
   <link rel="stylesheet" href="app/css/style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,6 +13,7 @@
   <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/ipfs/dist/index.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <style>
    body {
@@ -318,7 +320,11 @@
      class="my-1 mx-auto mt-10 grid grid-cols-3 gap-y-6 gap-x-4 md:grid-cols-6 lg:grid-cols-6 xl:grid-cols-6"
     >
      <div class="item-center">
-      <img src="/app/image/founder.png" class="w-max rounded-full" alt="#" />
+      <img
+       src="/app/image/founder.png"
+       class="w-max animate-pulse rounded-full"
+       alt="#"
+      />
       <span class="text-center sm:text-sm xl:text-lg">
        <h3 class="sm:text-sm xl:text-2xl">Mr. Duan</h3>
        <p class="#">Founder</p>
@@ -329,7 +335,11 @@
      <!--  -->
 
      <div>
-      <img src="/app/image/fazley.png" class="w-max rounded-full" alt="#" />
+      <img
+       src="/app/image/fazley.png"
+       class="w-max animate-pulse rounded-full"
+       alt="#"
+      />
       <span class="text-center sm:text-sm xl:text-lg">
        <h3 class="sm:text-sm xl:text-2xl">Mr. Fazly</h3>
        <p>Project Manager</p>
@@ -357,7 +367,7 @@
      <div>
       <img
        src="/app/image/mohdxnizamv.png"
-       class="w-max rounded-full"
+       class="w-max animate-pulse rounded-full"
        alt="#"
       />
       <span class="text-center sm:text-sm xl:text-lg">
@@ -418,7 +428,8 @@
     >
      <!--  -->
 
-     <a
+     <div
+      data-aos="fade-left"
       class="mx-auto my-7 block max-w-xl space-y-3 rounded-xl bg-gradient-to-r from-purple-700 p-6 shadow-xl"
      >
       <p class="text-2xl font-bold text-cyan">DURING & AFTER LAUNCH</p>
@@ -449,10 +460,13 @@
        <li>👉 marketing & influencer</li>
        <li>👉 doxxed & kyc</li>
       </ul>
-     </a>
+     </div>
      <!--  -->
 
-     <a
+     <div
+      data-aos="fade-left"
+      data-aos-offset="500"
+      data-aos-duration="900"
       class="mx-auto my-7 block max-w-xl space-y-3 rounded-xl bg-gradient-to-r from-purple-700 p-6 shadow-xl"
      >
       <p class="text-2xl font-bold text-cyan">STAKING AND LIQUIDITY</p>
@@ -480,10 +494,11 @@
        <li>👉 listing cexs</li>
        <li>👉 team expension</li>
       </ul>
-     </a>
+     </div>
      <!--  -->
 
-     <a
+     <div
+      data-aos="fade-left"
       class="mx-auto my-7 block max-w-xl space-y-3 rounded-xl bg-gradient-to-r from-purple-700 p-6 shadow-xl"
      >
       <p class="text-2xl font-bold text-cyan">ENGINE & TREASURY</p>
@@ -512,10 +527,13 @@
        <li>👉 marketing & influencer</li>
        <li>👉 + listing cexs</li>
       </ul>
-     </a>
+     </div>
      <!--  -->
 
-     <a
+     <div
+      data-aos="fade-left"
+      data-aos-offset="500"
+      data-aos-duration="900"
       class="mx-auto my-7 block max-w-xl space-y-3 rounded-xl bg-gradient-to-r from-purple-700 p-6 shadow-xl"
      >
       <p class="text-2xl font-bold text-cyan">ANYTHING TO EARN & BEYOND</p>
@@ -542,13 +560,14 @@
        <li>👉 marketing & influencer</li>
        <li>👉 ++ listing cexs</li>
       </ul>
-     </a>
+     </div>
      <!--  -->
     </div>
    </div>
   </section>
 
   <!-- Back to top Start -->
+
   <a
    href="#hero"
    class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-darkBlue p-4 hover:animate-pulse"
@@ -660,6 +679,11 @@
   <!--  -->
 
   <script src="./app/js/script.js"></script>
+
+  <script>
+   AOS.init()
+  </script>
+
   <script>
    $(document).ready(function () {
     console.log('wallet connect')
