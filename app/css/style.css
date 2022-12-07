@@ -744,10 +744,6 @@ video {
   height: 1.25rem;
 }
 
-.h-4{
-  height: 1rem;
-}
-
 .h-24{
   height: 6rem;
 }
@@ -848,6 +844,10 @@ video {
   align-items: center;
 }
 
+.justify-start{
+  justify-content: flex-start;
+}
+
 .justify-center{
   justify-content: center;
 }
@@ -856,8 +856,12 @@ video {
   justify-content: space-between;
 }
 
-.gap-8{
-  gap: 2rem;
+.gap-5{
+  gap: 1.25rem;
+}
+
+.gap-7{
+  gap: 1.75rem;
 }
 
 .gap-6{
@@ -1028,8 +1032,8 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.p-6{
-  padding: 1.5rem;
+.p-2{
+  padding: 0.5rem;
 }
 
 .p-4{
@@ -1056,9 +1060,14 @@ video {
   padding-bottom: 0.75rem;
 }
 
-.px-4{
-  padding-left: 1rem;
-  padding-right: 1rem;
+.px-1{
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.px-2{
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 
 .py-8{
@@ -1084,8 +1093,8 @@ video {
   padding-bottom: 1rem;
 }
 
-.pt-8{
-  padding-top: 2rem;
+.pt-10{
+  padding-top: 2.5rem;
 }
 
 .pt-16{
@@ -1118,10 +1127,6 @@ video {
 
 .font-Alata{
   font-family: Alata, sans-serif;
-}
-
-.font-mono{
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .text-3xl{
@@ -1430,11 +1435,6 @@ video {
 }
 
 @media (min-width: 360px){
-  .sm\:px-6{
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
   .sm\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
@@ -1442,6 +1442,11 @@ video {
 }
 
 @media (min-width: 760px){
+  .md\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .md\:mb-4{
     margin-bottom: 1rem;
   }
@@ -1482,10 +1487,6 @@ video {
     flex-direction: row;
   }
 
-  .md\:justify-start{
-    justify-content: flex-start;
-  }
-
   .md\:space-x-8 > :not([hidden]) ~ :not([hidden]){
     --tw-space-x-reverse: 0;
     margin-right: calc(2rem * var(--tw-space-x-reverse));
@@ -1511,6 +1512,10 @@ video {
   .md\:px-12{
     padding-left: 3rem;
     padding-right: 3rem;
+  }
+
+  .md\:pl-10{
+    padding-left: 2.5rem;
   }
 
   .md\:text-left{
@@ -1546,9 +1551,8 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .lg\:px-8{
-    padding-left: 2rem;
-    padding-right: 2rem;
+  .lg\:pl-10{
+    padding-left: 2.5rem;
   }
 }
 
@@ -1559,6 +1563,10 @@ video {
 
   .xl\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .xl\:pl-10{
+    padding-left: 2.5rem;
   }
 
   .xl\:text-lg{
