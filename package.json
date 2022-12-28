@@ -6,7 +6,7 @@
   "scripts": {
     "watch": "npx tailwindcss -i ./app/css/input.css -o ./app/css/style.css --watch",
     "build": "npx tailwindcss -i ./app/css/input.css -o ./app/css/style.css",
-    "write": "npx prettier --write index.html"
+    "write": "npx prettier --write ."
   },
   "keywords": [],
   "author": "",
@@ -18,7 +18,7 @@
     "@tailwindcss/typography": "^0.5.7",
     "autoprefixer": "^10.4.8",
     "postcss": "^8.4.16",
-    "prettier": "^2.7.1",
+    "prettier": "2.8.0",
     "prettier-plugin-tailwindcss": "^0.1.13",
     "tailwindcss": "^3.1.8"
   }
