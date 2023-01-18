@@ -6,6 +6,7 @@
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="refresh" content="15" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Honor Protocol | UNDER MAINTENANCE</title>
@@ -727,20 +728,26 @@
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script>
       $(document).ready(function () {
-        console.log("wallet connect")
-        $("#email").text("honorprotocol.net")
+        console.log("honorprotocol.net")
+        $("#honor").text("honorprotocol.net")
       })
 
-      //----------------------------------------------------------------------------------------------
       //Media Queries
-      function showBrowserWidth() {
-        const width = window.innerWidth
+      // function showBrowserWidth() {
+      //   const width = window.innerWidth
 
-        document.querySelector("h7").innerHTML = `Width: ${width}px`
-      }
+      //   document.querySelector("h8").innerHTML = `Width: ${width}px`
+      // }
 
-      window.onload = showBrowserWidth
-      window.onresize = showBrowserWidth
+      // window.onload = showBrowserWidth
+      // window.onresize = showBrowserWidth
+
+      // auto refresh
+      let counter = 1
+      setInterval(() => {
+        document.querySelector("h7").innerText = counter
+        counter++
+      }, 1000)
     </script>
 
     <script>
