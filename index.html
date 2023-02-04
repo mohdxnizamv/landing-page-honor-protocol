@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
-    <link rel="stylesheet" href="app/css/style.css" />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="refresh" content="15" />
+    <meta http-equiv="refresh" content="120" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="app/css/style.css" />
 
     <title>Honor Protocol | UNDER MAINTENANCE</title>
 
@@ -19,109 +18,74 @@
       }
     </style>
   </head>
-  <body class="font-Josefin text-white">
+  <body>
     <!-- Navbar  -->
-    <section id="home">
-      <!-- Hero Container -->
-      <div class="container mx-auto max-w-6xl px-6 py-12">
-        <!-- Menu/Logo Container -->
-        <nav class="flex items-center justify-between font-medium">
-          <!-- Logo -->
-          <img
-            src="app/image/main-logo.png"
-            class="w-10 rounded-full"
-            id="logo"
-            alt="logo"
-          />
-          <!-- Menu -->
-          <div class="hidden h-10 md:flex md:space-x-8">
-            <div class="font-Alata">
-              <a href="#hero">About Us</a>
-              <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-              ></div>
-            </div>
-            <div class="font-Alata">
-              <a href="https://t.me/honorprotocolofficial">Community</a>
-              <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-              ></div>
-            </div>
-            <div class="font-Alata">
-              <a href="#team">Team</a>
-              <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-              ></div>
-            </div>
-            <div class="font-Alata">
-              <a>Market</a>
-              <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-              ></div>
-            </div>
-            <div class="font-Alata">
-              <a href="#roadmap">Roadmap</a>
-              <div
-                class="mx-2 group-hover:border-b group-hover:border-blue-50"
-              ></div>
-            </div>
-          </div>
-          <!-- Hamburger Button -->
-          <div class="md:hidden">
-            <button
-              id="menu-btn"
-              class="hamburger z-30 block focus:outline-none md:hidden"
-            >
-              <span class="hamburger-top"></span>
-              <span class="hamburger-middle"></span>
-              <span class="hamburger-bottom"></span>
-            </button>
-          </div>
-        </nav>
+    <nav class="fixed top-0 left-0 mt-3 w-full bg-transparent shadow">
+      <div
+        class="container m-auto flex items-center justify-between text-gray-700"
+      >
+        <!-- Logo -->
+        <img
+          src="app/image/main-logo.png"
+          class="w-10 rounded-full"
+          id="logo"
+          alt="logo"
+        />
 
-        <!-- Mobile Menu -->
-        <div
-          id="menu"
-          class="fixed inset-0 z-20 hidden h-full min-h-screen w-full flex-col items-center divide-y divide-gray-500 self-end bg-veryDarkBlue px-6 py-1 pt-24 pb-4 capitalize tracking-widest text-white opacity-90"
+        <ul
+          class="hidden cursor-pointer items-center pr-10 text-base font-semibold md:flex"
         >
-          <div class="w-full py-3 text-center">
-            <div class="w-full py-3 text-center">
-              <div class="w-full py-3 text-center">
-                <a
-                  href="https://t.me/honorprotocolofficial"
-                  class="block font-Alata hover:text-red"
-                  >Community</a
-                >
-              </div>
+          <li class="py-4 px-6 hover:text-c.blue">About Us</li>
+          <li class="py-4 px-6 hover:text-c.blue">Community</li>
+          <li class="py-4 px-6 hover:text-c.blue">Team</li>
+          <li class="py-4 px-6 hover:text-c.blue">Market</li>
+          <li class="py-4 px-6 hover:text-c.blue">Roadmap</li>
+        </ul>
+
+        <button
+          class="group mx-2 block rounded bg-transparent py-3 px-4 focus:outline-none md:hidden"
+        >
+          <div class="mb-1 h-1 w-5 bg-gray-600"></div>
+          <div class="mb-1 h-1 w-5 bg-gray-600"></div>
+          <div class="h-1 w-5 bg-gray-600"></div>
+          <div
+            class="absolute top-0 -right-full h-auto w-6/12 rounded-l-3xl border bg-slate-900 to-transparent opacity-0 transition-all duration-300 group-focus:right-0 group-focus:opacity-100"
+          >
+            <ul
+              class="flex w-full cursor-pointer flex-col items-center pt-10 text-base"
+            >
+              <a
+                href="https://t.me/honorprotocolofficial"
+                class="w-full py-4 px-6 hover:text-c.blue"
+                >Community</a
+              >
               <a
                 href="https://testnetclaim.honorprotocol.net/"
-                class="block font-Alata hover:text-red"
-                >Claim Token [Testnet]</a
+                class="w-full py-4 px-6 hover:text-c.blue"
               >
-            </div>
-            <a
-              href="https://staking.honorprotocol.net/"
-              class="block font-Alata hover:text-red"
-              >Staking</a
-            >
+                Claim Token [TS]
+              </a>
+              <a
+                href="https://privatesale.honorprotocol.net/"
+                class="w-full py-4 px-6 hover:text-c.blue"
+                >Private Sales</a
+              >
+              <a
+                href="https://staking.honorprotocol.net/"
+                class="w-full py-4 px-6 hover:text-c.blue"
+                >Staking</a
+              >
+            </ul>
           </div>
-          <div class="w-full py-3 text-center">
-            <a
-              href="https://privatesale.honorprotocol.net/"
-              class="block font-Alata hover:text-red"
-              >Private Sale</a
-            >
-          </div>
-          <div class="w-full py-3 text-center">
-            <a class="block font-Alata hover:text-red"></a>
-          </div>
-        </div>
+        </button>
       </div>
-    </section>
+    </nav>
     <!--  -->
 
     <section id="PAGE UNDER MAINTENANCE">
-      <div class="text-center font-Alata text-3xl font-extrabold text-red">
+      <div
+        class="mt-20 text-center font-Alata text-3xl font-extrabold text-reddark"
+      >
         UNDER MAINTENANCE
       </div>
     </section>
@@ -150,23 +114,21 @@
             </h1>
             <br />
             <p class="mb-5 max-w-xl">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat
-              repudiandae suscipit consequatur, minus sint accusamus, similique
-              nemo ratione dolore, aut quas. Suscipit non recusandae animi
-              libero iusto officia repellat. Repudiandae rerum voluptate natus
-              libero accusamus mollitia saepe beatae animi neque! Dignissimos
-              sit molestias, incidunt aliquam vitae consequatur, tempore, minus
-              voluptatum rerum autem nesciunt!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reprehenderit, consequatur necessitatibus nostrum aliquam dolores
+              vero minima maxime veniam mollitia enim fuga quo. Explicabo
+              assumenda, illo fugit perspiciatis odio saepe omnis, voluptatem
+              doloremque expedita veniam minus deserunt quia dolores!
             </p>
+
             <br />
+
             <p class="mb-5 max-w-xl">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Reprehenderit, consequatur necessitatibus nostrum aliquam dolores
               vero minima maxime veniam mollitia enim fuga quo. Explicabo
               assumenda, illo fugit perspiciatis odio saepe omnis, voluptatem
               doloremque expedita veniam minus deserunt quia dolores!
-              Consequuntur id dolorum fugiat consequatur fugit veritatis et
-              sint. Pariatur
             </p>
 
             <h2 class="mb-5 font-Alata">
@@ -205,15 +167,15 @@
             <div class="rounded-l-full md:bg-transparent">
               <div class="flex items-center space-x-2">
                 <div class="btn5">01</div>
-                <h2 class="text-base font-semibold md:mb-4 md:hidden">
+                <p class="text-base font-semibold md:mb-4 md:hidden">
                   Multi-Chain Wallet
-                </h2>
+                </p>
               </div>
             </div>
             <div>
-              <h2 class="mb-4 hidden text-lg font-semibold md:block">
+              <p class="mb-4 hidden text-lg font-semibold md:block">
                 Multi-Chain Wallet
-              </h2>
+              </p>
               <p>
                 A fully decentralized multi-chain with security feature to keep
                 your crypto secure.
@@ -229,15 +191,15 @@
             <div class="rounded-l-full md:bg-transparent">
               <div class="flex items-center space-x-2">
                 <div class="btn5">02</div>
-                <h2 class="text-base font-semibold md:mb-4 md:hidden">
+                <p class="text-base font-semibold md:mb-4 md:hidden">
                   Decentralized Exchanges
-                </h2>
+                </p>
               </div>
             </div>
             <div>
-              <h2 class="mb-4 hidden text-lg font-semibold md:block">
+              <p class="mb-4 hidden text-lg font-semibold md:block">
                 Decentralized Exchanges
-              </h2>
+              </p>
               <p>
                 Our DEX provides numerous cryptocurrency assets and AI
                 portfolios with shariah-based guidelines.
@@ -253,15 +215,15 @@
             <div class="rounded-l-full md:bg-transparent">
               <div class="flex items-center space-x-2">
                 <div class="btn5">03</div>
-                <h2 class="text-base font-semibold md:mb-4 md:hidden">
+                <p class="text-base font-semibold md:mb-4 md:hidden">
                   Decentralized Finance
-                </h2>
+                </p>
               </div>
             </div>
             <div>
-              <h2 class="mb-4 hidden text-lg font-semibold md:block">
+              <p class="mb-4 hidden text-lg font-semibold md:block">
                 Decentralized Finance
-              </h2>
+              </p>
               <p>
                 According to most of DeFi projects and we are just right in the
                 conner to make it different.
@@ -280,15 +242,15 @@
             <div class="rounded-l-full md:bg-transparent">
               <div class="flex items-center space-x-2">
                 <div class="btn5">04</div>
-                <h2 class="text-base font-semibold md:mb-4 md:hidden">
+                <p class="text-base font-semibold md:mb-4 md:hidden">
                   Marketplace
-                </h2>
+                </p>
               </div>
             </div>
             <div>
-              <h2 class="mb-4 hidden text-lg font-semibold md:block">
+              <p class="mb-4 hidden text-lg font-semibold md:block">
                 Marketplace
-              </h2>
+              </p>
               <p>
                 A Decentralized marketplace for digital art, NFT project and
                 community projects.
@@ -304,15 +266,15 @@
             <div class="rounded-l-full md:bg-transparent">
               <div class="flex items-center space-x-2">
                 <div class="btn5">05</div>
-                <h2 class="text-base font-semibold md:mb-4 md:hidden">
+                <p class="text-base font-semibold md:mb-4 md:hidden">
                   Decentralized Autonomous Organization
-                </h2>
+                </p>
               </div>
             </div>
             <div>
-              <h2 class="mb-4 hidden text-lg font-semibold md:block">
+              <p class="mb-4 hidden text-lg font-semibold md:block">
                 Decentralized Autonomous Organization
-              </h2>
+              </p>
               <p>
                 Decentralized Autonomous Organization Empowering holders an
                 opportunity to vote!!
@@ -328,15 +290,15 @@
             <div class="rounded-l-full md:bg-transparent">
               <div class="flex items-center space-x-2">
                 <div class="btn5">06</div>
-                <h2 class="text-base font-semibold md:mb-4 md:hidden">
+                <p class="text-base font-semibold md:mb-4 md:hidden">
                   Crypto Citizen
-                </h2>
+                </p>
               </div>
             </div>
             <div>
-              <h2 class="mb-4 hidden text-lg font-semibold md:block">
+              <p class="mb-4 hidden text-lg font-semibold md:block">
                 Crypto Citizen
-              </h2>
+              </p>
               <p>
                 Knowledge is very important in crypto, is our responsibility to
                 educate our CITIZEN.
@@ -350,9 +312,9 @@
     <!-- Team member -->
     <section id="team">
       <div class="container mx-auto mt-20 px-6 text-center md:px-12">
-        <h3 class="text-center text-4xl font-bold">
+        <h2 class="text-center text-4xl font-bold">
           Honor Protocol, Team Development.
-        </h3>
+        </h2>
         <p class="lg:mx-auto lg:w-8/12">
           Our Honor Protocol team believes that the development of our unique
           projects will benefit our powerful and prosperous community to achieve
@@ -369,7 +331,7 @@
               alt="#"
             />
             <span class="text-center sm:text-sm xl:text-lg">
-              <h3 class="sm:text-sm xl:text-2xl">Mr. Duan</h3>
+              <p class="sm:text-sm xl:text-2xl">Mr. Duan</p>
               <p class="#">Founder</p>
 
               <a href="#" class="mx-auto block w-max text-blue-600">View Bio</a>
@@ -384,7 +346,7 @@
               alt="#"
             />
             <span class="text-center sm:text-sm xl:text-lg">
-              <h3 class="sm:text-sm xl:text-2xl">Mr. Fazly</h3>
+              <p class="sm:text-sm xl:text-2xl">Mr. Fazly</p>
               <p>Project Manager</p>
 
               <a href="#" class="mx-auto block w-max text-blue-600">View Bio</a>
@@ -399,7 +361,7 @@
               alt="#"
             />
             <span class="text-center sm:text-sm xl:text-lg">
-              <h3 class="sm:text-sm xl:text-2xl">Mr. Kazuha</h3>
+              <p class="sm:text-sm xl:text-2xl">Mr. Kazuha</p>
               <p>Graphic Design</p>
 
               <a href="#" class="mx-auto block w-max text-blue-600">View Bio</a>
@@ -414,7 +376,7 @@
               alt="#"
             />
             <span class="text-center sm:text-sm xl:text-lg">
-              <h3 class="sm:text-sm xl:text-2xl">mohdx nizamv</h3>
+              <p class="sm:text-sm xl:text-2xl">mohdx nizamv</p>
               <p>Development</p>
 
               <a href="#" class="mx-auto block w-max text-blue-600">View Bio</a>
@@ -429,7 +391,7 @@
               alt="#"
             />
             <span class="text-center sm:text-sm xl:text-lg">
-              <h3 class="sm:text-sm xl:text-2xl">mohdx nizamv</h3>
+              <p class="sm:text-sm xl:text-2xl">mohdx nizamv</p>
               <p>Development</p>
 
               <a href="#" class="mx-auto block w-max text-blue-600">View Bio</a>
@@ -444,7 +406,7 @@
               alt="#"
             />
             <span class="text-center sm:text-sm xl:text-lg">
-              <h3 class="sm:text-sm xl:text-2xl">mohdx nizamv</h3>
+              <p class="sm:text-sm xl:text-2xl">mohdx nizamv</p>
               <p>Development</p>
 
               <a href="#" class="mx-auto block w-max text-blue-600">View Bio</a>
@@ -477,14 +439,14 @@
             data-aos-easing="ease-in-sine"
             class="mx-auto my-7 block max-w-xl space-y-3 rounded-xl bg-gradient-to-r from-purple-700 p-2 shadow-xl"
           >
-            <p class="font-Alata text-2xl text-cyan">DURING & AFTER LAUNCH</p>
+            <p class="text-cyan font-Alata text-2xl">DURING & AFTER LAUNCH</p>
             <div
               class="my-1 grid grid-cols-2 gap-x-2 gap-y-2 py-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
             >
               <span class="uppercase"
                 >🟢 honor protocol ecosystem & utilities completed</span
               >
-              <span class="text-right text-base font-extrabold text-limegreen"
+              <span class="text-limegreen text-right text-base font-extrabold"
                 >100%</span
               >
             </div>
@@ -514,14 +476,14 @@
             data-aos-easing="ease-in-sine"
             class="mx-auto my-7 block max-w-xl space-y-3 rounded-xl bg-gradient-to-r from-purple-700 p-2 shadow-xl"
           >
-            <p class="text-2xl font-bold text-cyan">STAKING AND LIQUIDITY</p>
+            <p class="text-cyan text-2xl font-bold">STAKING AND LIQUIDITY</p>
             <div
               class="my-1 grid grid-cols-2 gap-x-2 gap-y-2 py-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
             >
               <span class="uppercase"
                 >🟢 + honor protocol ecosystem & utilities</span
               >
-              <span class="text-right text-base font-extrabold text-limegreen"
+              <span class="text-limegreen text-right text-base font-extrabold"
                 >50%</span
               >
             </div>
@@ -550,14 +512,14 @@
             data-aos-easing="ease-in-sine"
             class="mx-auto my-7 block max-w-xl space-y-3 rounded-xl bg-gradient-to-r from-purple-700 p-2 shadow-xl"
           >
-            <p class="font-Alata text-2xl text-cyan">ENGINE & TREASURY</p>
+            <p class="text-cyan font-Alata text-2xl">ENGINE & TREASURY</p>
             <div
               class="my-1 grid grid-cols-2 gap-x-2 gap-y-2 py-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
             >
               <span class="uppercase"
                 >🟢 ++ honor protocol ecosystem & utilities
               </span>
-              <span class="text-right text-base font-extrabold text-limegreen"
+              <span class="text-limegreen text-right text-base font-extrabold"
                 >0%</span
               >
             </div>
@@ -585,7 +547,7 @@
             data-aos-easing="ease-in-sine"
             class="mx-auto my-7 block max-w-xl space-y-3 rounded-xl bg-gradient-to-r from-purple-700 p-2 shadow-xl"
           >
-            <p class="font-Alata text-2xl text-cyan">
+            <p class="text-cyan font-Alata text-2xl">
               ANYTHING TO EARN & BEYOND
             </p>
             <div
@@ -594,7 +556,7 @@
               <span class="uppercase"
                 >🟢 ++ honor protocol ecosystem & utilities</span
               >
-              <span class="text-right text-base font-extrabold text-limegreen"
+              <span class="text-limegreen text-right text-base font-extrabold"
                 >0%</span
               >
             </div>
@@ -623,7 +585,7 @@
 
     <a
       href="#hero"
-      class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-darkBlue p-4 hover:animate-pulse"
+      class="bg-darkBlue fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full p-4 hover:animate-pulse"
       id="to-top"
     >
       <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
@@ -635,7 +597,7 @@
       <div class="mt-20">
         <div class="mx-auto max-w-7xl px-1">
           <div
-            class="grid grid-cols-1 gap-5 pt-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
+            class="grid grid-cols-1 gap-5 px-0.5 pt-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
           >
             <div class="md:pl-10 lg:pl-10 xl:pl-10">
               <img
@@ -654,8 +616,9 @@
                 >honorprotocol.net</a
               >
             </div>
+
             <div
-              class="grid grid-cols-1 gap-7 px-2 md:mx-auto lg:grid-cols-2 xl:grid-cols-2"
+              class="grid grid-cols-1 gap-7 md:mx-auto lg:grid-cols-2 xl:grid-cols-2"
             >
               <div class="text-sm">
                 <p class="mb-2 font-bold text-white">Our community</p>
@@ -719,11 +682,10 @@
     <!--  -->
 
     <section id="semak saiz">
-      <h7 class="pr-5 text-right"></h7>
+      <h4 class="pr-5 text-right"></h4>
     </section>
     <!--  -->
 
-    <script src="./app/js/script.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
     <script>
@@ -745,7 +707,7 @@
       // auto refresh
       let counter = 1
       setInterval(() => {
-        document.querySelector("h7").innerText = counter
+        document.querySelector("h4").innerText = counter
         counter++
       }, 1000)
     </script>
