@@ -20,6 +20,7 @@
   }
   body {
     font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
     @apply bg-slate-100 text-white dark:bg-slate-900 dark:text-white;
   }
   h1,
@@ -28,7 +29,8 @@
   h4,
   h5,
   h6 {
-    font-family: "Alata", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
   }
 }
 
@@ -51,4 +53,16 @@
   .btn5 {
     @apply relative rounded-xl bg-gradient-to-r from-purple-700  px-3 py-2 font-semibold uppercase text-white hover:text-black;
   }
+}
+
+.roadmap-section {
+  @apply mx-auto my-7 block max-w-xl space-y-3 rounded-xl bg-gradient-to-r from-purple-700 p-2 shadow-xl;
+}
+
+.footer {
+  @apply mx-auto max-w-7xl px-1;
+}
+
+.footer-footer {
+  @apply grid grid-cols-1 gap-5 px-0.5 pt-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2;
 }
