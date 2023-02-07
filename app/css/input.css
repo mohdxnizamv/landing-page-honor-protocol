@@ -19,9 +19,12 @@
     scroll-behavior: smooth;
   }
   body {
+    background-image: url("/app/image/bg.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover;
     font-family: "Josefin Sans", sans-serif;
     font-weight: 300;
-    @apply bg-slate-100 text-white dark:bg-slate-900 dark:text-white;
+    @apply text-white sm:text-sm md:text-sm lg:text-base xl:text-base;
   }
   h1,
   h2,
@@ -30,7 +33,7 @@
   h5,
   h6 {
     font-family: "Open Sans", sans-serif;
-    font-weight: 500;
+    @apply font-bold sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
   }
 }
 
@@ -55,14 +58,16 @@
   }
 }
 
-.roadmap-section {
-  @apply mx-auto my-7 block max-w-xl space-y-3 rounded-xl bg-gradient-to-r from-purple-700 p-2 shadow-xl;
-}
+@layer components {
+  .roadmap-section {
+    @apply mx-auto my-7 block max-w-xl space-y-3 rounded-xl bg-gradient-to-r from-purple-700 p-2 shadow-xl;
+  }
 
-.footer {
-  @apply mx-auto max-w-7xl px-1;
-}
+  .footer {
+    @apply mx-auto max-w-7xl px-1;
+  }
 
-.footer-footer {
-  @apply grid grid-cols-1 gap-5 px-0.5 pt-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2;
+  .footer-footer {
+    @apply grid grid-cols-1 gap-5 px-0.5 pt-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2;
+  }
 }

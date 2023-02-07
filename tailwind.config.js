@@ -16,13 +16,6 @@ module.exports = {
       xl: "1440px",
     },
     extend: {
-      fontFamily: {
-        Alata: ["Alata", "sans-serif"],
-        Outfit: ["Outfit", "sans-serif"],
-        Josefin: ["Josefin Sans", "sans-serif"],
-        Sans: ["Open Sans", "sans-serif"],
-      },
-
       colors: {
         "c.blue": "#484DFF",
         bluedark: "#1A3066",
