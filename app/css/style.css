@@ -834,11 +834,6 @@ h1,
   margin-bottom: 0.25rem;
 }
 
-.my-auto{
-  margin-top: auto;
-  margin-bottom: auto;
-}
-
 .my-5{
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
@@ -874,10 +869,6 @@ h1,
 
 .mt-2{
   margin-top: 0.5rem;
-}
-
-.mb-5{
-  margin-bottom: 1.25rem;
 }
 
 .mb-4{
@@ -1319,6 +1310,10 @@ h1,
   text-align: right;
 }
 
+.text-justify{
+  text-align: justify;
+}
+
 .text-sm{
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -1576,13 +1571,17 @@ h1,
 }
 
 @media (min-width: 360px){
-  .sm\:mx-auto{
-    margin-left: auto;
-    margin-right: auto;
+  .sm\:px-3{
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
   }
 
   .sm\:pl-2{
     padding-left: 0.5rem;
+  }
+
+  .sm\:text-center{
+    text-align: center;
   }
 
   .sm\:text-sm{
@@ -1662,8 +1661,22 @@ h1,
     padding-right: 3rem;
   }
 
+  .md\:px-0\.5{
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
+  }
+
+  .md\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .md\:pl-10{
     padding-left: 2.5rem;
+  }
+
+  .md\:text-left{
+    text-align: left;
   }
 
   .md\:text-4xl{
@@ -1676,11 +1689,6 @@ h1,
   .lg\:mx-auto{
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .lg\:mx-10{
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
   }
 
   .lg\:mt-5{
@@ -1703,17 +1711,26 @@ h1,
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
+  .lg\:px-0\.5{
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
+  }
+
+  .lg\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .lg\:pl-10{
     padding-left: 2.5rem;
+  }
+
+  .lg\:text-left{
+    text-align: left;
   }
 }
 
 @media (min-width: 1440px){
-  .xl\:mx-10{
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-  }
-
   .xl\:mt-20{
     margin-top: 5rem;
   }
@@ -1730,8 +1747,22 @@ h1,
     grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
+  .xl\:px-0\.5{
+    padding-left: 0.125rem;
+    padding-right: 0.125rem;
+  }
+
+  .xl\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .xl\:pl-10{
     padding-left: 2.5rem;
+  }
+
+  .xl\:text-left{
+    text-align: left;
   }
 
   .xl\:text-lg{
