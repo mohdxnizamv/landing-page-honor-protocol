@@ -8,6 +8,7 @@ module.exports = {
     },
   },
   content: ["**/*.html"],
+  darkMode: "class",
   theme: {
     screens: {
       sm: "360px",
