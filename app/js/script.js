@@ -1,12 +1,14 @@
-//Media Queries
-// function showBrowserWidth() {
-//   const width = window.innerWidth
+// navbar mobile
+const btn = document.getElementById("menu-btn")
+const menu = document.getElementById("menu")
 
-//   document.querySelector("h8").innerHTML = `Width: ${width}px`
-// }
+btn.addEventListener("click", navToggle)
 
-// window.onload = showBrowserWidth
-// window.onresize = showBrowserWidth
+function navToggle() {
+  btn.classList.toggle("open")
+  menu.classList.toggle("flex")
+  menu.classList.toggle("hidden")
+}
 
 // auto refresh
 let counter = 1
@@ -15,7 +17,7 @@ setInterval(() => {
   counter++
 }, 1000)
 
-// Get the button:
+// Get the button
 let mybutton = document.getElementById("to-top")
 
 // When the user scrolls down 20px from the top of the document, show the button

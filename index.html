@@ -11,181 +11,161 @@
   </head>
   <body class="images-honor">
     <!-- Navbar  -->
-    <header class="relative">
-      <div class="px-4 sm:px-6 md:px-8">
-        <div
-          class="relative flex items-center justify-between pt-6 text-sm font-semibold leading-6 text-slate-700 dark:text-slate-200 lg:pt-8"
+    <div class="relative">
+      <div
+        class="absolute mx-auto w-full justify-center bg-black/95 text-center text-xs"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="inline h-5 w-5"
         >
-          <!-- logo here -->
-          <img
-            src="./app/image/logo.png"
-            alt="#logo"
-            class="h-5 w-5 rounded-full"
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M2.25 12.76c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.076-4.076a1.526 1.526 0 011.037-.443 48.282 48.282 0 005.68-.494c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"
           />
-          <!-- navbar here -->
-          <div class="flex items-center">
-            <button
-              type="button"
-              class="-my-1 flex h-8 w-8 items-center justify-center text-slate-500 hover:text-slate-600 dark:hover:text-slate-300 md:hidden"
+        </svg>
+
+        Honor Protocol is Under Maintenance.
+      </div>
+
+      <div id="hero" class="mx-auto max-w-full bg-black/60 py-3.5">
+        <div
+          class="my-1 grid grid-cols-2 place-items-center gap-x-3 gap-y-3 py-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
+        >
+          <img
+            src="app/image/logo.png"
+            alt="#"
+            class="w-10 rounded-full sm:mr-20 sm:w-10 xl:w-10"
+          />
+
+          <div class="hidden md:flex">
+            Login / Sign In
+
+            <span class="sr-only">Search</span>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="ml-4 inline-flex h-6 w-6"
             >
-              <span class="sr-only">Search</span
-              ><svg
-                width="24"
-                height="24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
+              <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+
+            <span class="sr-only">mohdxnizamv on GitHub</span>
+
+            <a
+              href="https://github.com/mohdxnizamv"
+              class="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300"
+            >
+              <svg
+                viewBox="0 0 16 16"
+                class="h-5 w-5"
+                fill="currentColor"
                 aria-hidden="true"
+                class="ml-4 h-6 w-6"
               >
-                <path d="m19 19-3.5-3.5"></path>
-                <circle cx="11" cy="11" r="6"></circle>
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
+                ></path>
               </svg>
+            </a>
+          </div>
+
+          <!-- Hamburger Button -->
+          <div class="ml-36 md:hidden">
+            <button
+              id="menu-btn"
+              type="button"
+              class="hamburger z-40 block focus:outline-none md:hidden"
+            >
+              <span class="hamburger-top"></span>
+              <span class="hamburger-middle"></span>
+              <span class="hamburger-bottom"></span>
             </button>
+          </div>
 
-            <!--  -->
-            <div class="-my-1 ml-2 -mr-1 md:hidden">
-              <button
-                type="button"
-                class="flex h-8 w-8 items-center justify-center text-slate-500 hover:text-slate-600 dark:text-slate-400 dark:hover:text-slate-300"
-              >
-                <span class="sr-only">Navigation</span
-                ><svg width="24" height="24" fill="none" aria-hidden="true">
-                  <path
-                    d="M12 6v.01M12 12v.01M12 18v.01M12 7a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm0 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"
-                    stroke="currentColor"
-                    stroke-width="1.5"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-              </button>
-              <div
-                style="
-                  position: fixed;
-                  top: 1px;
-                  left: 1px;
-                  width: 1px;
-                  height: 0;
-                  padding: 0;
-                  margin: -1px;
-                  overflow: hidden;
-                  clip: rect(0, 0, 0, 0);
-                  white-space: nowrap;
-                  border-width: 0;
-                  display: none;
-                "
-              ></div>
-            </div>
-
-            <!--  -->
-            <div class="hidden items-center md:flex">
-              <nav>
-                <ul class="flex items-center gap-x-8">
-                  <li>
-                    <a
-                      class="hover:text-sky-500 dark:hover:text-sky-400"
-                      href="#here"
-                      >About Us</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#here"
-                      class="hover:text-sky-500 dark:hover:text-sky-400"
-                      >Community</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="hover:text-sky-500 dark:hover:text-sky-400"
-                      href="#here"
-                      >Team</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="hover:text-sky-500 dark:hover:text-sky-400"
-                      href="#here"
-                      >Market</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="#here"
-                      class="hover:text-sky-500 dark:hover:text-sky-400"
-                      >Roadmap</a
-                    >
-                  </li>
-                </ul>
-              </nav>
-
-              <!--  -->
-              <div
-                class="ml-6 flex items-center border-l border-slate-200 pl-6 dark:border-slate-800"
-              >
-                <button
-                  id="theme-toggle"
-                  type="button"
-                  class="rounded-lg p-2.5 text-sm text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-700"
-                >
-                  <svg
-                    id="theme-toggle-dark-icon"
-                    class="hidden h-5 w-5"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
-                    ></path>
-                  </svg>
-                  <svg
-                    id="theme-toggle-light-icon"
-                    class="hidden h-5 w-5"
-                    fill="currentColor"
-                    viewBox="0 0 20 20"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                </button>
-
-                <a
-                  href="https://github.com/mohdxnizamv"
-                  class="ml-6 block text-slate-400 hover:text-slate-500 dark:hover:text-slate-300"
-                >
-                  <span class="sr-only"> mohdxnizamv on GitHub </span>
-
-                  <svg
-                    viewBox="0 0 16 16"
-                    class="h-5 w-5"
-                    fill="currentColor"
-                    aria-hidden="true"
-                  >
-                    <path
-                      d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
-                    ></path>
-                  </svg>
-                </a>
-              </div>
-            </div>
+          <!-- Mobile Menu -->
+          <div
+            id="menu"
+            class="absolute bottom-0 left-0 top-0 hidden min-h-screen w-full flex-col space-y-7 self-end bg-black/90 py-1 pl-12 pt-40 uppercase"
+          >
+            <a href="#" class="hover:text-sky-500">About Us</a>
+            <a href="#" class="hover:text-sky-500">Community</a>
+            <a href="#" class="hover:text-sky-500">Team</a>
+            <a href="#" class="hover:text-sky-500">Market</a>
+            <a href="#" class="hover:text-sky-500">Roadmap</a>
           </div>
         </div>
       </div>
-    </header>
-    <!--  -->
+    </div>
 
-    <section id="hero">
-      <div class="mt-20 text-center text-3xl font-extrabold text-reddark">
-        UNDER MAINTENANCE
-      </div>
-    </section>
+    <div class="sticky top-0 z-[9999]">
+      <nav
+        class="hidden w-full items-center justify-center gap-5 bg-black/50 py-3 md:flex"
+      >
+        <div class="flex gap-x-14 font-semibold">
+          <a href="" class="hover:text-sky-500">About Us</a>
+          <a href="" class="hover:text-sky-500">Community</a>
+          <a href="" class="hover:text-sky-500">Team</a>
+          <a href="" class="hover:text-sky-500">Market</a>
+
+          <button
+            class="group relative flex items-center justify-center shadow ring-black/50 focus:outline-none focus:ring"
+          >
+            <p class="px-4 hover:text-sky-500">Dapps</p>
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-4 w-4"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+
+            <div
+              class="absolute top-full mt-1 hidden w-max min-w-full rounded bg-black/80 shadow-md group-focus:block"
+            >
+              <ul class="rounded border text-left">
+                <li
+                  class="border-b px-4 py-1 hover:bg-black/50 hover:text-sky-500"
+                >
+                  Community
+                </li>
+                <li
+                  class="border-b px-4 py-1 hover:bg-black/50 hover:text-sky-500"
+                >
+                  Main Dapps
+                </li>
+                <li
+                  class="border-b px-4 py-1 hover:bg-black/50 hover:text-sky-500"
+                >
+                  Staking
+                </li>
+              </ul>
+            </div>
+          </button>
+        </div>
+      </nav>
+    </div>
 
     <!-- Hero Section -->
     <section>
@@ -228,7 +208,7 @@
               doloremque expedita veniam minus deserunt quia dolores!
             </p>
 
-            <div class="my-5 font-bold">
+            <div class="my-5">
               <p>Honor Contract Address:</p>
               <p>0x20000000000000000012345689</p>
             </div>
@@ -263,15 +243,11 @@
             <div class="rounded-l-full md:bg-transparent">
               <div class="flex items-center space-x-2">
                 <div class="btn5">01</div>
-                <p class="font-semibold md:mb-4 md:hidden">
-                  Multi-Chain Wallet
-                </p>
+                <p class="md:mb-4 md:hidden">Multi-Chain Wallet</p>
               </div>
             </div>
             <div>
-              <p class="mb-4 hidden text-lg font-semibold md:block">
-                Multi-Chain Wallet
-              </p>
+              <p class="mb-4 hidden md:block">Multi-Chain Wallet</p>
               <p>
                 A fully decentralized multi-chain with security feature to keep
                 your crypto secure.
@@ -287,15 +263,11 @@
             <div class="rounded-l-full md:bg-transparent">
               <div class="flex items-center space-x-2">
                 <div class="btn5">02</div>
-                <p class="font-semibold md:mb-4 md:hidden">
-                  Decentralized Exchanges
-                </p>
+                <p class="md:mb-4 md:hidden">Decentralized Exchanges</p>
               </div>
             </div>
             <div>
-              <p class="mb-4 hidden text-lg font-semibold md:block">
-                Decentralized Exchanges
-              </p>
+              <p class="mb-4 hidden md:block">Decentralized Exchanges</p>
               <p>
                 Our DEX provides numerous cryptocurrency assets and AI
                 portfolios with shariah-based guidelines.
@@ -311,15 +283,11 @@
             <div class="rounded-l-full md:bg-transparent">
               <div class="flex items-center space-x-2">
                 <div class="btn5">03</div>
-                <p class="font-semibold md:mb-4 md:hidden">
-                  Decentralized Finance
-                </p>
+                <p class="md:mb-4 md:hidden">Decentralized Finance</p>
               </div>
             </div>
             <div>
-              <p class="mb-4 hidden text-lg font-semibold md:block">
-                Decentralized Finance
-              </p>
+              <p class="mb-4 hidden md:block">Decentralized Finance</p>
               <p>
                 According to most of DeFi projects and we are just right in the
                 conner to make it different.
@@ -338,13 +306,11 @@
             <div class="rounded-l-full md:bg-transparent">
               <div class="flex items-center space-x-2">
                 <div class="btn5">04</div>
-                <p class="font-semibold md:mb-4 md:hidden">Marketplace</p>
+                <p class="md:mb-4 md:hidden">Marketplace</p>
               </div>
             </div>
             <div>
-              <p class="mb-4 hidden text-lg font-semibold md:block">
-                Marketplace
-              </p>
+              <p class="mb-4 hidden md:block">Marketplace</p>
               <p>
                 A Decentralized marketplace for digital art, NFT project and
                 community projects.
@@ -360,13 +326,13 @@
             <div class="rounded-l-full md:bg-transparent">
               <div class="flex items-center space-x-2">
                 <div class="btn5">05</div>
-                <p class="font-semibold md:mb-4 md:hidden">
+                <p class="md:mb-4 md:hidden">
                   Decentralized Autonomous Organization
                 </p>
               </div>
             </div>
             <div>
-              <p class="mb-4 hidden text-lg font-semibold md:block">
+              <p class="mb-4 hidden md:block">
                 Decentralized Autonomous Organization
               </p>
               <p>
@@ -384,13 +350,11 @@
             <div class="rounded-l-full md:bg-transparent">
               <div class="flex items-center space-x-2">
                 <div class="btn5">06</div>
-                <p class="font-semibold md:mb-4 md:hidden">Crypto Citizen</p>
+                <p class="md:mb-4 md:hidden">Crypto Citizen</p>
               </div>
             </div>
             <div>
-              <p class="mb-4 hidden text-lg font-semibold md:block">
-                Crypto Citizen
-              </p>
+              <p class="mb-4 hidden md:block">Crypto Citizen</p>
               <p>
                 Knowledge is very important in crypto, is our responsibility to
                 educate our CITIZEN.
@@ -420,11 +384,13 @@
               class="w-max animate-pulse"
               alt="#"
             />
-            <span class="text-center sm:text-sm xl:text-lg">
-              <p class="sm:text-sm xl:text-2xl">Mr. Duan</p>
-              <p class="#">Founder</p>
+            <span class="text-center">
+              <p>Mr. Duan</p>
+              <p>Founder</p>
 
-              <a href="#" class="mx-auto block w-max text-bluedark">View Bio</a>
+              <a href="#" class="mx-auto block w-max text-blue hover:underline"
+                >View Bio</a
+              >
             </span>
           </div>
           <!--  -->
@@ -435,11 +401,13 @@
               class="w-max animate-pulse"
               alt="#"
             />
-            <span class="text-center sm:text-sm xl:text-lg">
-              <p class="sm:text-sm xl:text-2xl">Mr. Fazly</p>
+            <span class="text-center">
+              <p>Mr. Fazly</p>
               <p>Project Manager</p>
 
-              <a href="#" class="mx-auto block w-max text-bluedark">View Bio</a>
+              <a href="#" class="mx-auto block w-max text-blue hover:underline"
+                >View Bio</a
+              >
             </span>
           </div>
           <!--  -->
@@ -450,11 +418,13 @@
               class="w-max rounded-full"
               alt="#"
             />
-            <span class="text-center sm:text-sm xl:text-lg">
-              <p class="sm:text-sm xl:text-2xl">Mr. Kazuha</p>
+            <span class="text-center">
+              <p>Mr. Kazuha</p>
               <p>Graphic Design</p>
 
-              <a href="#" class="mx-auto block w-max text-bluedark">View Bio</a>
+              <a href="#" class="mx-auto block w-max text-blue hover:underline"
+                >View Bio</a
+              >
             </span>
           </div>
           <!--  -->
@@ -465,11 +435,13 @@
               class="w-max animate-pulse"
               alt="#"
             />
-            <span class="text-center sm:text-sm xl:text-lg">
-              <p class="sm:text-sm xl:text-2xl">mohdx nizamv</p>
+            <span class="text-center">
+              <p>mohdx nizamv</p>
               <p>Development</p>
 
-              <a href="#" class="mx-auto block w-max text-bluedark">View Bio</a>
+              <a href="#" class="mx-auto block w-max text-blue hover:underline"
+                >View Bio</a
+              >
             </span>
           </div>
           <!--  -->
@@ -480,11 +452,13 @@
               class="w-max rounded-full"
               alt="#"
             />
-            <span class="text-center sm:text-sm xl:text-lg">
-              <p class="sm:text-sm xl:text-2xl">mohdx nizamv</p>
+            <span class="text-center">
+              <p>mohdx nizamv</p>
               <p>Development</p>
 
-              <a href="#" class="mx-auto block w-max text-bluedark">View Bio</a>
+              <a href="#" class="mx-auto block w-max text-blue hover:underline"
+                >View Bio</a
+              >
             </span>
           </div>
           <!--  -->
@@ -495,11 +469,13 @@
               class="w-max rounded-full"
               alt="#"
             />
-            <span class="text-center sm:text-sm xl:text-lg">
-              <p class="sm:text-sm xl:text-2xl">mohdx nizamv</p>
+            <span class="text-center">
+              <p>mohdx nizamv</p>
               <p>Development</p>
 
-              <a href="#" class="mx-auto block w-max text-bluedark">View Bio</a>
+              <a href="#" class="mx-auto block w-max text-blue hover:underline"
+                >View Bio</a
+              >
             </span>
           </div>
           <!--  -->
@@ -510,9 +486,7 @@
     <!-- Road map Section -->
     <section id="roadmap">
       <div class="container mx-auto mt-20 px-1 text-left">
-        <h3 class="text-center text-2xl md:text-4xl">
-          Honor Protocol, Roadmap.
-        </h3>
+        <h3 class="text-center">Honor Protocol, Roadmap.</h3>
         <p class="text-center lg:mx-auto lg:w-8/12">
           Honor Protocol project roadmap, timeline are extremely important in
           assuring the development continues without delays.
@@ -529,19 +503,19 @@
             data-aos-easing="ease-in-sine"
             class="roadmap-section"
           >
-            <p class="text-2xl font-semibold text-c.blue">
-              DURING & AFTER LAUNCH
-            </p>
+            <p class="text-xl font-semibold text-blue">DURING & AFTER LAUNCH</p>
+
             <div
               class="my-1 grid grid-cols-2 gap-x-2 gap-y-2 py-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
             >
-              <span class="uppercase text-c.blue"
+              <span class="uppercase"
                 >🟢 honor protocol ecosystem & utilities completed</span
               >
-              <span class="text-right font-extrabold">100%</span>
+              <span class="text-right">100%</span>
             </div>
+
             <!--  -->
-            <ul class="list-none group-hover:text-white">
+            <ul class="list-none">
               <li>👉 nft & token</li>
               <li>👉 marketplace</li>
               <li>👉 nft liqiuidity (intial 20%)</li>
@@ -551,7 +525,7 @@
             </ul>
             <br />
             <span class="uppercase">🟫 after - behind the protocol</span>
-            <ul class="list-none group-hover:text-white">
+            <ul class="list-none">
               <li>👉 audit</li>
               <li>👉 coinmarketcap & coingecko</li>
               <li>👉 marketing & influencer</li>
@@ -566,19 +540,19 @@
             data-aos-easing="ease-in-sine"
             class="roadmap-section"
           >
-            <p class="text-2xl font-semibold text-c.blue">
-              STAKING AND LIQUIDITY
-            </p>
+            <p class="text-xl font-semibold text-blue">STAKING AND LIQUIDITY</p>
+
             <div
               class="my-1 grid grid-cols-2 gap-x-2 gap-y-2 py-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
             >
-              <span class="uppercase text-c.blue"
+              <span class="uppercase"
                 >🟢 + honor protocol ecosystem & utilities</span
               >
-              <span class="text-right font-extrabold">50%</span>
+              <span class="text-right">50%</span>
             </div>
+
             <!--  -->
-            <ul class="list-none group-hover:text-white">
+            <ul class="list-none">
               <li>👉 nft staking</li>
               <li>👉 token staking</li>
               <li>👉 protocol engine v2.0 (+ stake flowchart)</li>
@@ -587,7 +561,7 @@
             </ul>
             <br />
             <span class="uppercase">🟫 behind the protocol</span>
-            <ul class="list-none group-hover:text-white">
+            <ul class="list-none">
               <li>👉 website v2</li>
               <li>👉 marketing & influencer</li>
               <li>👉 listing cexs</li>
@@ -602,17 +576,19 @@
             data-aos-easing="ease-in-sine"
             class="roadmap-section"
           >
-            <p class="text-2xl font-semibold text-c.blue">ENGINE & TREASURY</p>
+            <p class="text-xl font-semibold text-blue">ENGINE & TREASURY</p>
+
             <div
               class="my-1 grid grid-cols-2 gap-x-2 gap-y-2 py-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
             >
-              <span class="uppercase text-c.blue"
+              <span class="uppercase"
                 >🟢 ++ honor protocol ecosystem & utilities
               </span>
-              <span class="text-right font-extrabold">0%</span>
+              <span class="text-right">0%</span>
             </div>
             <!--  -->
-            <ul class="list-none group-hover:text-white">
+
+            <ul class="list-none">
               <li>👉 nft liqiuidity up to (35% - 40%)</li>
               <li>👉 protocol engine v3.0 (+ hub & stake flowchart)</li>
               <li>👉 staking & nft mining v2.0</li>
@@ -621,7 +597,7 @@
             </ul>
             <br />
             <span class="uppercase">🟫 behind the protocol</span>
-            <ul class="list-none group-hover:text-white">
+            <ul class="list-none">
               <li>👉 partnership</li>
               <li>👉 marketing & influencer</li>
               <li>👉 + listing cexs</li>
@@ -635,19 +611,21 @@
             data-aos-easing="ease-in-sine"
             class="roadmap-section"
           >
-            <p class="text-2xl font-semibold text-c.blue">
+            <p class="text-xl font-semibold text-blue">
               ANYTHING TO EARN & BEYOND
             </p>
+
             <div
               class="my-1 grid grid-cols-2 gap-x-2 gap-y-2 py-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
             >
-              <span class="uppercase text-c.blue"
+              <span class="uppercase"
                 >🟢 ++ honor protocol ecosystem & utilities</span
               >
-              <span class="text-right font-extrabold">0%</span>
+              <span class="text-right">0%</span>
             </div>
             <!--  -->
-            <ul class="list-none group-hover:text-white">
+
+            <ul class="list-none">
               <li>👉 anything to earn (ate)</li>
               <li>
                 👉 revamped yield rank to superlink with staking, hub & ate
@@ -658,7 +636,7 @@
             </ul>
             <br />
             <span class="uppercase">🟫 behind the protocol</span>
-            <ul class="list-none group-hover:text-white">
+            <ul class="list-none">
               <li>👉 partnership</li>
               <li>👉 marketing & influencer</li>
               <li>👉 ++ listing cexs</li>
@@ -672,7 +650,7 @@
     <!-- Scroll back to Top" -->
     <a
       href="#hero"
-      class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-bluedark p-4 hover:animate-pulse"
+      class="fixed bottom-4 right-4 z-[9999] hidden h-14 w-14 items-center justify-center rounded-full bg-green p-4 hover:animate-pulse"
       id="to-top"
     >
       <span class="mt-2 block h-5 w-5 rotate-45 border-t-2 border-l-2"></span>
@@ -689,12 +667,12 @@
                 alt="honorprotocol"
                 src="app/image/main-logo.png"
               />
-              <p class="mt-4 text-sm">
+              <p class="mt-4">
                 Technology needs to support human initiatives not substitute
                 them.
               </p>
               <a
-                class="mt-4 text-sm hover:underline"
+                class="mt-4 hover:underline"
                 href="www.honorprotocol.net"
                 id="email"
                 >honorprotocol.net</a
@@ -704,8 +682,8 @@
             <div
               class="grid grid-cols-1 gap-7 md:mx-auto lg:grid-cols-2 xl:grid-cols-2"
             >
-              <div class="text-sm">
-                <p class="mb-2 text-white">Our community</p>
+              <div>
+                <p class="mb-2">Our community</p>
                 <ul>
                   <li class="mt-2">
                     <a
@@ -742,8 +720,8 @@
                 </ul>
               </div>
 
-              <div class="text-sm">
-                <p class="mb-2 font-bold text-white"></p>
+              <div>
+                <p class="mb-2"></p>
                 <ul>
                   <li class="mt-2">
                     <a class="hover:underline" alt="#">About us</a>
@@ -759,7 +737,7 @@
             </div>
           </div>
 
-          <p class="pt-16 pb-8 text-center text-sm">
+          <p class="pt-16 pb-8 text-center">
             © 2023 Honor Protocol. All Rights Reserved.
           </p>
         </div>

@@ -18,9 +18,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        "c.blue": "#484DFF",
-        bluedark: "#1A3066",
-        reddark: "#CC0000E6",
+        green: "#353B17",
+        softGreen: "#4F5727",
+        blue: "#484DFF",
       },
       backgroundImage: {
         "hero-pattern": "url('../image/wallpaper-honor.jpg')",

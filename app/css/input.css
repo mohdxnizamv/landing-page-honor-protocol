@@ -1,14 +1,26 @@
 /* Nunito */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
 
-/* Open Sans */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-
 /* Josefin Sans */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 /* Alata Sans */
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+/* Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+/* Poppins Sans */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Golos Text Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap");
+
+/* DM Sans Fonts */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+
+/* Jost Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -19,11 +31,8 @@
     scroll-behavior: smooth;
   }
   body {
-    /* background-image: url("/app/image/bg.jpg");
-    background-repeat: no-repeat, repeat;
-    background-size: cover; */
-    font-family: "Josefin Sans", sans-serif;
-    font-weight: 300;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
     @apply text-white sm:text-sm md:text-sm lg:text-base xl:text-base;
   }
   h1,
@@ -32,29 +41,29 @@
   h4,
   h5,
   h6 {
-    font-family: "Open Sans", sans-serif;
+    font-family: "DM Sans", sans-serif;
     @apply font-bold sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
   }
 }
 
 @layer components {
   .btn {
-    @apply transform rounded-full border border-gray-300 px-4 py-2 text-sm font-bold shadow-sm hover:scale-105 focus:outline-none focus:ring-2;
+    @apply transform rounded-full border border-gray-300 px-4 py-2 text-sm shadow-sm hover:scale-105 focus:outline-none focus:ring-2;
   }
   .btn1 {
-    @apply my-0 border-2 border-black px-4 py-2 text-center font-semibold uppercase tracking-widest hover:bg-black hover:text-white;
+    @apply my-0 border-2 border-black px-4 py-2 text-center uppercase tracking-widest hover:bg-black hover:text-white;
   }
   .btn2 {
-    @apply relative -top-1 -left-1 bg-gray-800 py-2.5 px-5 font-bold uppercase text-white transition-all before:absolute before:top-1 before:left-1 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0;
+    @apply relative -top-1 -left-1 bg-gray-800 py-2.5 px-5 uppercase text-white transition-all before:absolute before:top-1 before:left-1 before:-z-[1] before:h-full before:w-full before:border-2 before:border-gray-700 before:transition-all before:content-[''] hover:top-0 hover:left-0 before:hover:top-0 before:hover:left-0;
   }
   .btn3 {
-    @apply relative rounded-md border-2 border-black bg-transparent py-2 px-3.5 font-bold uppercase text-black transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-black before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100;
+    @apply relative rounded-md border-2 border-black bg-transparent py-2 px-3.5 uppercase text-black transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-black before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100;
   }
   .btn4 {
-    @apply relative rounded-3xl bg-gradient-to-l from-purple-700 to-blue-700 px-7 py-4 text-center font-semibold capitalize text-white hover:bg-gradient-to-r sm:text-sm md:text-sm xl:text-base;
+    @apply relative rounded-3xl bg-gradient-to-l from-softGreen to-black/10 px-7 py-4 text-center capitalize text-white hover:bg-gradient-to-r sm:text-sm md:text-sm xl:text-base;
   }
   .btn5 {
-    @apply relative rounded-xl bg-gradient-to-r from-purple-700  px-3 py-2 font-semibold uppercase text-white hover:text-black;
+    @apply relative rounded-xl bg-gradient-to-r from-softGreen px-3 py-2 uppercase text-white hover:text-black;
   }
 }
 
@@ -63,7 +72,7 @@
     @apply bg-[url('../image/wallpaper-honor.jpg')];
   }
   .roadmap-section {
-    @apply mx-auto my-7 block max-w-xl space-y-3 rounded-xl bg-gradient-to-r from-purple-700 p-2 shadow-xl;
+    @apply mx-auto my-7 block max-w-xl space-y-3 rounded-xl bg-gradient-to-r from-softGreen p-2 shadow-xl;
   }
 
   .footer {
@@ -73,4 +82,50 @@
   .footer-footer {
     @apply grid grid-cols-1 gap-5 px-0.5 pt-10 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2;
   }
+}
+
+/* Hamburger Menu */
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 0;
+  left: 0;
+  background: #fff;
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.hamburger-middle {
+  transform: translateY(7px);
+}
+
+.hamburger-bottom {
+  transform: translateY(14px);
+}
+
+.open {
+  transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+  display: none;
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
