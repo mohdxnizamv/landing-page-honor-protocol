@@ -22,6 +22,10 @@ module.exports = {
         bluedark: "#1A3066",
         reddark: "#CC0000E6",
       },
+      backgroundImage: {
+        "hero-pattern": "url('../image/wallpaper-honor.jpg')",
+        "footer-texture": "url('../image/')",
+      },
     },
   },
   plugins: [],

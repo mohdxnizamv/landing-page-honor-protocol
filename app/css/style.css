@@ -438,9 +438,9 @@ html {
 }
 
 body {
-  background-image: url("/app/image/bg.jpg");
-  background-repeat: no-repeat, repeat;
-  background-size: cover;
+  /* background-image: url("/app/image/bg.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: cover; */
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
   --tw-text-opacity: 1;
@@ -719,6 +719,10 @@ h1,
 .btn5:hover{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.images-honor{
+  background-image: url('../image/wallpaper-honor.jpg');
 }
 
 .roadmap-section{
@@ -1348,14 +1352,14 @@ h1,
   color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .text-slate-400{
   --tw-text-opacity: 1;
   color: rgb(148 163 184 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .text-reddark{
