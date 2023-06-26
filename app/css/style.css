@@ -939,6 +939,10 @@ h1,
   right: 1rem;
 }
 
+.right-0{
+  right: 0px;
+}
+
 .z-40{
   z-index: 40;
 }
@@ -1031,6 +1035,10 @@ h1,
   margin-top: 0px;
 }
 
+.mt-44{
+  margin-top: 11rem;
+}
+
 .block{
   display: block;
 }
@@ -1055,12 +1063,12 @@ h1,
   display: none;
 }
 
-.h-5{
-  height: 1.25rem;
-}
-
 .h-8{
   height: 2rem;
+}
+
+.h-5{
+  height: 1.25rem;
 }
 
 .h-10{
@@ -1087,12 +1095,12 @@ h1,
   min-height: 100vh;
 }
 
-.w-5{
-  width: 1.25rem;
-}
-
 .w-8{
   width: 2rem;
+}
+
+.w-5{
+  width: 1.25rem;
 }
 
 .w-max{
@@ -1481,6 +1489,11 @@ h1,
   padding-right: 0px;
 }
 
+.py-2{
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .pt-6{
   padding-top: 1.5rem;
 }
@@ -1718,6 +1731,20 @@ h1,
   background-color: rgb(0 0 0 / 0.5);
 }
 
+.hover\:bg-gray-400:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-transparent:hover{
+  background-color: transparent;
+}
+
+.hover\:bg-black:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .hover\:text-sky-500:hover{
   --tw-text-opacity: 1;
   color: rgb(14 165 233 / var(--tw-text-opacity));
@@ -1726,6 +1753,11 @@ h1,
 .hover\:text-slate-500:hover{
   --tw-text-opacity: 1;
   color: rgb(100 116 139 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover{
