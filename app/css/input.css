@@ -60,10 +60,13 @@
     @apply relative rounded-md border-2 border-black bg-transparent py-2 px-3.5 uppercase text-black transition-colors before:absolute before:left-0 before:top-0 before:-z-10 before:h-full before:w-full before:origin-top-left before:scale-x-0 before:bg-black before:transition-transform before:duration-300 before:content-[''] hover:text-white before:hover:scale-x-100;
   }
   .btn4 {
-    @apply relative rounded-3xl bg-gradient-to-l from-softGreen to-black/10 px-7 py-4 text-center capitalize text-white hover:bg-gradient-to-r sm:text-sm md:text-sm xl:text-base;
+    @apply relative rounded-3xl bg-gradient-to-l from-softGreen to-black/10 px-7 py-4 text-center capitalize text-white hover:bg-gradient-to-r sm:text-xs md:text-sm lg:text-sm xl:text-base;
   }
   .btn5 {
     @apply relative rounded-xl bg-gradient-to-r from-softGreen px-3 py-2 uppercase text-white hover:text-black;
+  }
+  .btn6 {
+    @apply relative rounded-3xl bg-gradient-to-l from-softGreen to-black/10 px-7 py-4 text-center capitalize text-white hover:bg-gradient-to-r sm:text-sm md:text-sm lg:text-sm xl:text-base;
   }
 }
 
@@ -71,6 +74,11 @@
   .images-honor {
     @apply bg-[url('../image/wallpaper-honor.jpg')];
   }
+
+  .features-list {
+    @apply font-bold sm:text-lg md:text-lg lg:text-xl xl:text-xl;
+  }
+
   .roadmap-section {
     @apply mx-auto my-7 block max-w-xl space-y-3 rounded-xl bg-gradient-to-r from-softGreen p-2 shadow-xl;
   }
