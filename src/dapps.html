@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta http-equiv="refresh" content="120" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="app/css/style.css" />
+
+    <!-- Css -->
+    <link rel="stylesheet" href="/app/css/style.css" />
     <title>Honor Protocol | Apps</title>
   </head>
   <body class="images-honor">
@@ -18,7 +21,7 @@
         >
           <!-- logo here -->
           <img
-            src="app/image/main-logo.png"
+            src="/app/image/main-logo.png"
             alt="#"
             class="w-8 rounded-full sm:mr-20 sm:w-8 xl:w-8"
           />
@@ -45,7 +48,7 @@
             </button>
 
             <!--  -->
-            <div class="-my-1 ml-2 -mr-1 md:hidden">
+            <div class="-my-1 -mr-1 ml-2 md:hidden">
               <button
                 type="button"
                 class="flex h-8 w-8 items-center justify-center"
@@ -132,128 +135,104 @@
     </header>
     <!--  -->
 
-    <section>
-      <div class="container mx-auto mt-32 px-6 text-center md:px-12">
-        <h1 class="text-center">Apps</h1>
-        <p class="mt-5 lg:mx-auto lg:w-8/12">
-          Explore our ecosystem of modular applications that are inherently
-          interoperable across DeFi's various ecosystems.
-        </p>
+    <section class="py-14">
+      <div class="container mx-auto">
+        <div class="text-center">
+          <h1>Apps</h1>
+          <p>
+            Explore our ecosystem of modular applications that are inherently
+            interoperable across DeFi's various ecosystems.
+          </p>
+        </div>
       </div>
     </section>
 
-    <section>
-      <!-- Flex Container -->
-      <div class="mx-auto mt-20 max-w-7xl p-5">
-        <!-- Left Item -->
+    <section class="py-14">
+      <div class="container mx-auto">
         <div
-          class="my-1 grid grid-cols-1 gap-x-3 gap-y-3 py-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
+          class="my-1 grid grid-cols-1 gap-x-14 gap-y-6 md:grid-cols-2 lg:grid-cols-2 lg:place-items-center xl:grid-cols-2 xl:place-items-center"
         >
-          <!-- Gambar -->
-          <span>
+          <div>
             <img
-              src="./app/image/dappexample.png"
-              class="w-max rounded-xl p-1 duration-200 hover:scale-105"
+              src="/app/image/dappexample.png"
+              class="w-[600px] duration-200 hover:scale-105"
               alt="dapps"
             />
-          </span>
+          </div>
 
-          <!-- Example -->
-          <span class="sm:px-3 md:px-0.5 lg:px-0.5 xl:px-0.5">
+          <div class="col-auto">
             <h1>Honor Protocol Dapps</h1>
 
-            <p class="mt-5">
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
               qui eveniet minus non cupiditate? Aperiam reprehenderit recusandae
               dicta laudantium apo?
             </p>
 
-            <div
-              class="my-5 grid grid-cols-2 gap-x-3 gap-y-3 py-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3"
-            >
-              <a href="https://testnet.honorprotocol.net/" class="btn4"
-                >Dapps Testnet</a
-              >
-            </div>
-          </span>
+            <button class="btn4">
+              <a href="https://testnet.honorprotocol.net/">Dapps Testnet</a>
+            </button>
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <!-- Flex Container -->
-      <div class="mx-auto max-w-7xl p-5 md:mt-5 lg:mt-5 xl:mt-20">
-        <!-- Left Item -->
+    <section class="py-14">
+      <div class="container mx-auto">
         <div
-          class="my-1 grid grid-cols-1 gap-x-3 gap-y-3 py-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
+          class="my-1 grid grid-cols-1 gap-x-14 gap-y-6 md:grid-cols-2 lg:grid-cols-2 lg:place-items-center xl:grid-cols-2 xl:place-items-center"
         >
-          <!-- Gambar -->
-          <span>
+          <div>
             <img
-              src="./app/image/dappexample2.png"
-              class="w-max rounded-xl p-1 duration-200 hover:scale-105"
+              src="/app/image/dappexample2.png"
+              class="w-[600px] duration-200 hover:scale-105"
               alt="staking"
             />
-          </span>
+          </div>
 
-          <!-- Example -->
-          <span class="sm:px-3 md:px-0.5 lg:px-0.5 xl:px-0.5">
+          <div class="col-auto">
             <h1>Honor Protocol Staking</h1>
 
-            <p class="mt-5">
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
               qui eveniet minus non cupiditate? Aperiam reprehenderit recusandae
               dicta laudantium apo?
             </p>
 
-            <div
-              class="my-5 grid grid-cols-2 gap-x-3 gap-y-3 py-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3"
-            >
-              <a
-                href="https://staking.honorprotocol.net/"
-                class="sm:btn4 xl:btn6"
-                >Dapps Staking</a
-              >
-            </div>
-          </span>
+            <button class="btn4">
+              <a href="https://staking.honorprotocol.net/">Staking Dapps</a>
+            </button>
+          </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <!-- Flex Container -->
-      <div class="mx-auto max-w-7xl p-5 md:mt-5 lg:mt-5 xl:mt-20">
-        <!-- Left Item -->
+    <section class="py-14">
+      <div class="container mx-auto">
         <div
-          class="my-1 grid grid-cols-1 gap-x-3 gap-y-3 py-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2"
+          class="my-1 grid grid-cols-1 gap-x-14 gap-y-6 md:grid-cols-2 lg:grid-cols-2 lg:place-items-center xl:grid-cols-2 xl:place-items-center"
         >
-          <!-- Gambar -->
-          <span>
+          <div>
             <img
-              src="./app/image/dappexample.png"
-              class="w-max rounded-xl p-1 duration-200 hover:scale-105"
+              src="/app/image/dappexample.png"
+              class="w-[600px] duration-200 hover:scale-105"
               alt="dapps"
             />
-          </span>
+          </div>
 
-          <!-- Example -->
-          <span class="sm:px-3 md:px-0.5 lg:px-0.5 xl:px-0.5">
+          <div class="col-auto">
             <h1>Honor Protocol Dapps</h1>
 
-            <p class="mt-5">
+            <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
               qui eveniet minus non cupiditate? Aperiam reprehenderit recusandae
               dicta laudantium apo?
             </p>
 
-            <div
-              class="my-5 grid grid-cols-2 gap-x-3 gap-y-3 py-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3"
-            >
-              <a href="https://dappsnew.honorprotocol.net/" class="btn4"
-                >Dapps Testnet v2</a
-              >
-            </div>
-          </span>
+            <button class="btn4">
+              <a href="https://dappsnew.honorprotocol.net/">Dapps V2</a>
+            </button>
+          </div>
         </div>
       </div>
     </section>
@@ -267,7 +246,7 @@
               <img
                 class="h-10 w-auto rounded-full"
                 alt="honorprotocol"
-                src="app/image/main-logo.png"
+                src="/app/image/main-logo.png"
               />
               <p class="mt-4 text-sm">
                 Technology needs to support human initiatives not substitute
@@ -339,7 +318,7 @@
             </div>
           </div>
 
-          <p class="pt-16 pb-8 text-center text-sm">
+          <p class="pb-8 pt-16 text-center text-sm">
             © 2023 Honor Protocol. All Rights Reserved.
           </p>
         </div>
