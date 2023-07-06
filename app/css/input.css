@@ -1,26 +1,8 @@
-/* Nunito */
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
-
-/* Josefin Sans */
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
-
-/* Alata Sans */
-@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
-
-/* Open Sans */
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-
-/* Poppins Sans */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
-/* Golos Text Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&display=swap");
-
 /* DM Sans Fonts */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
 
-/* Jost Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* Black Ops One */
+@import url("https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -41,8 +23,8 @@
   h4,
   h5,
   h6 {
-    font-family: "DM Sans", sans-serif;
-    @apply font-bold sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
+    font-family: "Black Ops One";
+    @apply sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl;
   }
 }
 
